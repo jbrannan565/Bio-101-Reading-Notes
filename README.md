@@ -13,3 +13,11 @@ There is also a "class_notes" directory, which is what one might guess. The note
 ## Update schedule
 
 I'll be updating these notes throughout the Fall 2021 term according to the reading schedule outlined in the syllabus. I'll try to have them done before the end of the week specified in that calendar.
+
+## On content: Reference
+
+Much of the text here is directly coppied or summarized from the corresponding openstax text or class lecture. Take all content as belonging to them, not to me. I do however claim all responsibility for mistakes within.
+
+## Contrributions
+
+This will be an incomplete reference, so any additions are welcome -- just submit a pull request or sent me an email with instructions on what you think should change.
