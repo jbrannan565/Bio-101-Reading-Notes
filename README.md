@@ -9,3 +9,7 @@ Files are written in LaTex, and the actual content can be found in the pdf files
 Each directory corresponds with the OpenStax textbook that the notes are taken from. The notes will be titled by chapter, and contain all sections of the chapter within. For example, in "Ch_1.tex" the section numbered "1" will correspond to section "1.1" of the text.
 
 There is also a "class_notes" directory, which is what one might guess. The notes are labeled by week and lecture number, as well as date. 
+
+## Update schedule
+
+I'll be updating these notes throughout the Fall 2021 term according to the reading schedule outlined in the syllabus. I'll try to have them done before the end of the week specified in that calendar.
