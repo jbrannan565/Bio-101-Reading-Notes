@@ -1,0 +1,219 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Week 3 Lecture 0}
+\author{Jared Brannan }
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{bbm}
+\usepackage{bm}
+\usepackage{physics}
+
+% indent first line
+\usepackage{indentfirst}
+
+\theoremstyle{definition}
+
+\newcommand{\upRiemannint}[2]{
+\overline{\int_{#1}^{#2}}
+}
+\newcommand{\loRiemannint}[2]{
+\underline{\int_{#1}^{#2}}
+}
+
+\newtheorem{definition}{Definition}
+\newtheorem{asside}{Asside}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{example}{Example}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{puzzle}{Puzzle}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+
+
+\begin{document}
+\maketitle
+
+\section{Administrative drivel}
+The exam will cover through today's material, sans lipids
+
+\section{More on Biochistry: The Chemistry of Life}
+\subsection{Atoms interact in different ways}
+\begin{itemize}
+	\item Atoms for \textit{Chemical bonds}  between each other based around their electrons
+	\item Atoms do chemistry in order to fill up the outmost energy level in the atom (for most elements in LIFE that is 8 electrons, by H (hydrogen) needs only 2)
+	\item Usually, for each proton there is an electron in the atom, so atoms are electrically neutral.
+		\begin{itemize}
+			\item this can be changed by adding or removing energy from the system
+		\end{itemize}
+	\item e.g.
+		\begin{itemize}
+			\item Hydrogen (H) requires 1-more electron to fill it's outermost energy level
+			\item Oxygen requires 2-more electrons to fill it's outmost energy level (it has 6 in its outer shell usually, and it wants to have 8 in it's outmost shell)
+			\item If we have 2 H, and 1 O in the states above, the can share electrons to get up to their desired number (This is an example of a covalent bond)
+		\end{itemize}
+	\item in the periodic table, in a given column tend to form the same types and number of bonds, since they have the same number of outermost elecctrons in their ``default state". i.e. the outermost shell of electrons has the same number of electrons among the atoms in a given column.
+	\item The noble gasses (right most in the periodic table) have full outer shells in their default state, so they don't like to bond
+\end{itemize}
+
+\subsection{Ionic bonds - between ions}
+\begin{itemize}
+	\item Atoms will give up one of their electrons to another to fill their outermost shell. 
+	\item \textbf{Salts} do this!
+		\begin{itemize}
+			\item Sodium (Na) has 1 electron in outer shell
+			\item Chlorine (CL) has a "hole" (7 electrons in valence shell)
+			\item Na gives it's electron to Cl
+			\item the result is 2 \textbf{ions}: Cl is negatively charged ($Cl^-$) and Na is positively charged ($Na^+$ )
+		\end{itemize}
+\end{itemize}
+\subsection{Covalent bonds- electron is shared}
+\begin{itemize}
+	\item characterized by \textbf{sharing}  electrong
+	\item Molecules are chemicals that are atoms combined by covalent bonds
+	\item very strong bond
+	\item e.g.
+		\begin{itemize}
+			\item Water
+			\item methane (natural gass)
+			\item oxygen ($O_2$ )
+		\end{itemize}
+\end{itemize}
+
+\subsection{Polarity, seperation of electric charge}
+\begin{itemize}
+	\item due to unequla sharing of electrons between two atoms
+	\item now, opposite charges between molecules attract
+	\item e.g.
+		\begin{itemize}
+			\item in water ($H_2 )$, oxygen likes to hoard the electron, making the oxygen end negative, and the side that the hydrogen live on is negative in the molecule.
+		\end{itemize}
+\end{itemize}
+
+\subsection{Hydrogen bonds, relatively weak}
+\begin{itemize}
+	\item e.g. 2 water molecules can be bonded along their oposite chage (oxygen side of one water molecule bonds to the hydrogen end of the other water molecule, since the O side has a negative charge, and the H side has a negative charge)
+	\item Happens between neighboring molecules
+	\item Happens between polar molecules (see the previous section)
+	\item (usually forms a latice with Xs made up of O in the middle surrounded by 4 Hs)
+	\item easily broken, but happen everywhere, and are very ``usefull" in life molecules
+	\item more generally, we call charge bonds like these ``polar bonds"
+\end{itemize}
+
+\subsection{More about water}
+\begin{itemize}
+	\item It's got good properties
+		\begin{itemize}
+			\item Works as a solvent for life! (due to mild polarity)
+		\end{itemize}
+	\item living things are mostly water (by mass)
+	\item The polarity of water means polar and charged atoms and molecules can dissolve in it
+		\begin{itemize}
+			\item e.g. salt
+			\item water surrounds the $Cl^-$ and $Na^+$ (with oposite charge pole facing the respective molecule) untill there is no more water molecules, or no more salt.
+		\end{itemize}
+	\item solvents allow cells to bring things in and out of themselves
+\end{itemize}
+
+\definition \textit{Molecule.} a formation of more than 1 atom that has covalent bonds between the atoms (usually)
+
+
+\subsection{Important organic molecules}
+\begin{itemize}
+	\item Carbs
+	\item Lipids
+	\item ...
+\end{itemize}
+
+\subsubsection{Carbohydrates}
+\begin{itemize}
+	\item substances found in starchy plant materials (usually)
+	\item Glucose
+		\begin{itemize}
+			\item 6 carbons in a ring ish thing, with hydrogens and oxygens
+			\item the product of plant's photosynthesis
+			\item this is the sugar in your blood
+		\end{itemize}
+	\item all 1 to 2 to 1 ratio of carbon, hydrogen, oxygen respectively
+	\item Monosaccharides -- simple sugars
+		\begin{itemize}
+			\item either 5 or 6 carbons
+			\item differ in shape, structure, arrangement
+			\item glucose, fructose, etc
+		\end{itemize}
+	\item Disaccharides
+		\begin{itemize}
+			\item composed of 2 simple sugars
+			\item e.g. lactose (milk sugar), sucrose (table sugar)
+			\item lactose is galactose + glucose
+			\item glucose + fructos = sucrose
+			\item sugars are hooked together on their respective oxygens
+		\end{itemize}
+	\item sugar names end in ``ose"
+	\item Polysaccarides (not sugars!)
+		\begin{itemize}
+			\item starch -- most common poly... in plants
+				\begin{itemize}
+					\item made up of the composition of more than 2 simple sugars
+					\item sugars are hooked together on their respective oxygens
+					\item this is long term energy storage for plants
+					\item starch in some seeds is to provide energy for the seed to germinate
+					\item most fruits have a lot of starch, some roots do too
+					\item when fruits become ripe, the fruit breaks down the starches into sugars which attract other animal to distribute the seeds of the plant.
+				\end{itemize}
+			\item Glycogen
+				\begin{itemize}
+					\item characterized by many branching chains, instead of single chains in the starches.
+					\item the way humans store energy (most vertebrates as well) store it in their liver and muscles for long term energy
+					\item too much glycogen will get converted to fat (lipids)
+				\end{itemize}
+		\end{itemize}
+\end{itemize}
+
+\subsubsection{Lipids}
+\begin{itemize}
+	\item super energy dense molecules
+	\item stores long term excess energy
+	\item this can be a problem in humans, since it can be hard to get rid of.
+	\item consist of fats and oils
+	\item key components:
+		\begin{itemize}
+			\item glycerol + fatty acids
+			\item when you have 3 fatty acid chains that are attached to the glycerol ``backbone" you get a \textbf{triacylglyceral}  or \textbf{triglyceride} 
+			\item fatty acid: long chain of carbons with a bunch of hydrogens, the end OH tends to break off and bonds with the clycerol making water and a lipid.
+			\item fatty acids are the basic lipid, and there are many different kinds, and can be combined into a wide veriety of triglycerides.
+			\item almost all fatty acids have an even number of carbons
+		\end{itemize}
+	\item Triglicerides:
+		\begin{itemize}
+			\item Main long-term energy storage in humans
+			\item lipids are stored in fat cells in a vessicle
+			\item migratory birds in late summer will double their weight in fat and burn it off in migration
+		\end{itemize}
+	\item fatty acids vary
+		\begin{itemize}
+			\item straight if all of the carbons are single bond
+				\begin{itemize}
+					\item tend to be solid at room temp, since they can line up with each other
+					\item called saturated
+					\item tend to make fat deposits in the arteries long term, which is noo good.
+				\end{itemize}
+			\item you get a kink in the acid if there's a double bond in the carbon chain
+				\begin{itemize}
+					\item plants tend to make these
+					\item tend to be liquid at body temp, since the acide don't line up as easily
+					\item called unsaturated
+				\end{itemize}
+		\end{itemize}
+\end{itemize}
+
+
+
+\end{document}
