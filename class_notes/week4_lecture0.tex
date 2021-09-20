@@ -1,0 +1,199 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Week 4 Lecture 0}
+\author{Jared Brannan }
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{bbm}
+\usepackage{bm}
+\usepackage{physics}
+
+% indent first line
+\usepackage{indentfirst}
+
+\theoremstyle{definition}
+
+\newcommand{\upRiemannint}[2]{
+\overline{\int_{#1}^{#2}}
+}
+\newcommand{\loRiemannint}[2]{
+\underline{\int_{#1}^{#2}}
+}
+
+\newtheorem{definition}{Definition}
+\newtheorem{asside}{Asside}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{example}{Example}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{puzzle}{Puzzle}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+
+
+\begin{document}
+\maketitle
+
+\section{Administrative drivel}
+\begin{itemize}
+	\item He's begun grading, should be done by friday
+	\item the course (and individual exams) is curved!
+\end{itemize}
+
+\section{more on biochistry: the chemistry of life}
+\subsection{Lipids}
+\begin{itemize}
+	\item Review
+		\begin{itemize}
+			\item triglyceride: made of 1 glycerol and 3 fatty acids
+			\item the kinks in the fatty acids determines the melting temp of the triglyceride
+			\item plants tend to store as liquid (kinkless)
+			\item our bodies build lipids when it has an excess of callories
+		\end{itemize}
+	\item Cis- and Trans-fatty acids
+		\begin{itemize}
+			\item cis: has hydrogens on either side of the double bond are on the same side of the molecule
+			\item trans: has hydrogens on opoosite side of the molecule
+			\item Trans-fatty acids are difficult for humans to break down, and so contribute to things like heart disease.
+			\item for the last 8ish decades food industries have used trans-fats to increase the shelf life of foods.
+			\item trans-fats are mostly artificial
+			\item bacteria also struggle to break down trans-fats, hence the longer shelf life
+			\item it wasn't till recently that there's been a push to get these out of foods
+			\item story
+				\begin{itemize}
+					\item about 30 years ago
+					\item junk food companies spent millions to invent fats with low calories
+					\item they did this by creating indigestible fatty acids using alternate backbones to the standard 3 backbone glycerol, as well as some new fatty acids
+					\item they made all of these ads
+					\item after putting to market, they discovered that these new fats made people fart a lot
+				\end{itemize}
+		\end{itemize}
+	\item Solubility
+		\begin{itemize}
+			\item lipids \textit{do not} disolve well in water
+			\item this can make it require more work to break them down
+			\item most fats are ``imisable" in water, meaning they won't mix with water.
+			\item what makes this happen? Oils have few hydrogen bonds, so there's little charge seperation, so no poles.
+			\item oil is generally less dense than water, so it rises to the top
+		\end{itemize}
+	\item \textbf{Phospholipids} 
+		\begin{itemize}
+			\item as the name suggests, there's phosphorus in these
+			\item parts:
+				\begin{itemize}
+					\item glycerol
+					\item 2 fatty acids (tails)
+					\item phosphate bound on one of the oxygens where a fatty acid would be in a triglycoride (4 Os, 1 P, 1 R) (head)
+					\item has a hydrophobic an hydrophilic end (fatty acid and on the phosphorus end respectively)
+					\begin{itemize}
+						\item hydrophobic - scared of water (repells water)
+						\item hydrophilic - loves water (``attracts" water)
+							\begin{itemize}
+								\item so, it'll form hydrogen bonds.
+							\end{itemize}
+					\end{itemize}
+				\end{itemize}
+			\item also immisable in water
+			\item make up \textbf{biological membranes} 
+			\item if you put them in water they'll sit with the acids in the water, and the "head" sticking out.
+			\item if you get enough of then together, they'll form a sphere with heads pointed out, tails pointed in
+			\item even more together you end up with an inner an outer sphere with water inside, folloowed by the corresponding heads, then the tails all pointing together, then the outer shell of heads
+			\item this last structure is what makes up cell membranes: called the \textbf{phospholipid bilayer.} 
+			\item if you get enough phospholipids together in water and stir em up, you'll get this structure.
+			\item cell membranes are \textit{not} rigid
+		\end{itemize}
+	\item \textbf{Steroids}
+		\begin{itemize}
+			\item e.g. cholesterol, testosterone, estradiol, cortisol
+			\item characterized by their rings
+			\item chain of carbons going off at least one end
+			\item in diagrams, kinks usually denote carbons
+			\item cholesterol is rather important in cell membranes:
+				\begin{itemize}
+					\item they hang out inside the phospholipid bilayer (tail sticking out)
+					\item allows the bilayer to be flexible
+					\item too much contributes to the hardening of the arteries
+				\end{itemize}
+			\item adding or subtracting small components from colesterol gives you testosterone
+				\begin{itemize}
+					\item regulates a lot of physiological activities
+				\end{itemize}
+			\item testosterone is converted into esterdiol (contains estrogen)
+			\item cortisol is involved in stress responses
+				\begin{itemize}
+					\item in short term situations where you're stressed for minutes or hours by keeping you awake, regulating matabolism, etc
+					\item high for too long will cause problems
+				\end{itemize}
+			\item depth of embeding in a bilayer is determined by ** SOMTHING??? **
+		\end{itemize}
+	\item fats disolve in organic solvents (like gasoline)
+\end{itemize}
+
+\section{More biochemistry: Nucleic Acids and Protiens}
+With these 2, we have all 4 of the biological molecules
+
+Clicker q: saturated fats don't have double bonds!
+
+\subsection{Protiens}
+\begin{itemize}
+	\item They do a lot
+	\item Types: Digestive enzymes, transport, structural, hormones, defense, contractile, storage
+	\item digestive enzymes reduce the amount of energy needed to do work help in digestion of food by catabolizing nutrients into monomeric units
+		\begin{itemize}
+			\item e.g. amylase, lipase, pepsin, trypsin
+		\end{itemize}
+	\item transport: carry substances in the blood or lymph throughout the body
+		\begin{itemize}
+			\item e.g. hemoglobin, albumin
+		\end{itemize}
+	\item structural: construcct different stuctures like cytoskeleton
+		\begin{itemize}
+			\item actin, tubulin, keratin
+		\end{itemize}
+	\item hormones: coordinate activity of different body systems
+		\begin{itemize}
+			\item e.g. insulin, thyroxine
+		\end{itemize}
+	\item defense: protect the body from foreign pathogens
+		\begin{itemize}
+			\item immunoglobulins
+		\end{itemize}
+	\item cantractile: effect muscle contraction
+		\begin{itemize}
+			\item e.g. actin, myosin
+		\end{itemize}
+	\item storage: provide nourishment in early development of the embryo and the seedling.
+		\begin{itemize}
+			\item legume storage protiens
+		\end{itemize}
+	
+	\item basically infinitely many
+	\item subunit: \textbf{Amino acids} 
+		\begin{itemize}
+			\item made of 2 carbons attached to a nitrogen (with hydrogens and oxygens) and a \textit{side chain} 
+				\begin{itemize}
+					\item side chain determines the type
+					\item more specific: amino group (nitrogen and 2 hydrogens), carboxyl group (carbon, 2 oxygen, and a hydrogen), and the side chain
+				\end{itemize}
+			\item 26 different amino acids
+			\item 9 are the so called ``essential amino acids" (can't be synthesized by the body)
+			\item the body can make most of these from scratch, but the essential ones cannot be made by the body
+		\end{itemize}
+	\item protiens are made of chains of amino acids
+	\item amino acids can be linked together by peptide bonds into a \textit{polypeptide} 
+	\item the polar bonds between them cause them to fold into specific structures
+	\item start with a beta sheet, then fold back into tertiary protein structure, then those fold into quartenary structure
+	\item the tertiary structure is usually where it stops, and is the function
+	\item these are called \textit{functional protiens} 
+	\item polypeptides are \textit{not} protiens till they've folded
+\end{itemize}
+
+
+\end{document}
