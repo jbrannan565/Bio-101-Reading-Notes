@@ -1,0 +1,164 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Week 4 Lecture 0}
+\author{Jared Brannan }
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{bbm}
+\usepackage{bm}
+\usepackage{physics}
+
+% indent first line
+\usepackage{indentfirst}
+
+\theoremstyle{definition}
+
+\newcommand{\upRiemannint}[2]{
+\overline{\int_{#1}^{#2}}
+}
+\newcommand{\loRiemannint}[2]{
+\underline{\int_{#1}^{#2}}
+}
+
+\newtheorem{definition}{Definition}
+\newtheorem{asside}{Asside}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{example}{Example}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{puzzle}{Puzzle}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+
+
+\begin{document}
+\maketitle
+
+\section{Administrative drivel}
+\begin{itemize}
+	\item Clicker scores cannot be directly uploaded to Canvas, so they'll be manually entered as a sum every so often.
+\end{itemize}
+
+\section{More on biochistry: the chemistry of life}
+\subsection{More on Protiens}
+\begin{itemize}
+	\item  Polypeptides fold along
+		\begin{itemize}
+			\item polar locations (usual cause)
+			\item sulfer forming covalent bonds
+		\end{itemize}
+	\item two kinds of sheets:
+		\begin{itemize}
+			\item beta-pleated sheet
+			\item alpha-helix
+		\end{itemize}
+	\item Variety in R groups gives each amino accid unique properties
+		\begin{itemize}
+			\item  Charge
+				\begin{itemize}
+					\item diffferences in carbon chain, different hydrogen chunks, etc.
+				\end{itemize}
+			\item Hydrophobicity
+			\item etc.
+			\item these also determine the folding
+		\end{itemize}
+	\item all protiens that start as the same polypeptides fold into the same shaped structure. If they don't the protien doesn't function the same way.
+	\item There is a huge variety of possible protiens built from the 26 amino acids ($26!$ ?)
+	\item Clicker q: What is the basic subunit of a protein? Amino acids
+\end{itemize}
+\subsection{Necleic Acids}
+Final basic biomolecule type!
+\begin{itemize}
+	\item Include DNA (in nucleus), RNA, others
+	\item Most nucleic acids store or transfer \textit{information} (genetics!)
+	\item living things organize their genetic material into chromosomes
+	\item DNA stores your genetic code.
+	\item RNA helps produce proteins from the information encoded in DNA
+		\begin{itemize}
+			\item basically transfers the information stored in DNA around
+		\end{itemize}
+	\item Most DNA codes for making protiens
+		\begin{itemize}
+			\item info in DNA is transfered to protein factories via mRNA
+		\end{itemize}
+	\item Some nucleic acids provide short term energy storage -- on the order of less than a few hours, to as short as a milisecond
+	\item primary energy acid: ATP
+		\begin{itemize}
+			\item refered to as the energy currency in organisms
+		\end{itemize}
+	\item there are others energy nucleic acids, but we'll focus on ATP
+	\item Basic components (3):
+		\begin{itemize}
+			\item Phosphate attached to a central deoxyribose or ribose sugar attached to a nitrogenous base (since it has at least one nitrogen)
+				\begin{itemize}
+					\item 5 bases varieties: A, G, T, C, U
+					\item no `T's in RNA (U replaces T in RNA)
+				\end{itemize}
+			\item genes are made up of sequences of these 5 base varieties
+			\item bases are polar and forms hydrogen bonds with other bases
+			\item The sugar kind determines whether it's RNA or DNA (ribose or deoxyribose respectively)
+				\begin{itemize}
+					\item deoxyribose is just ribose missing an oxygen (bottom right one)
+				\end{itemize}
+		\end{itemize}
+	\item Two categories of bases:
+		\begin{itemize}
+			\item Pyrimidines: C, T, U
+			\item Purines: A, G
+		\end{itemize}
+	\item DNA and RNA occur as \textit{polymers}
+		\begin{itemize}
+			\item DNA polymers found in antiparallel helix
+			\item double stranded
+			\item one goes up the strand, the other goes down
+		\end{itemize}
+	\item DNA is the longest molecule in the body, and every cell has it (that are human cells)
+	\item All cells have the same DNA
+	\item DNA is ``as tall as you"
+	\item until DNA was understood, we didn't know how inheritence was transfered. Watson and Crick and Franklin figured out the structure, and confirmed that DNA was the information source. circa 1958-9
+	\item \textbf{Bases pair as}:
+		\begin{itemize}
+			\item T pairs with A (or U with A in RNA)
+			\item C pairs with G
+			\item based on the distancdes between things
+			\item pair as hydrogen bonds
+		\end{itemize}
+	\item These pairings allow for parity in the information in the oposing strand, allowing for errors to get caught in copying
+	\item Definition: A \textit{gene} is a segment of DNA that codes for a protein
+	\item there will be a sequence of nucleic acids that says "this is the start of the gene" and another that says "this is the end of the gene!"
+	\item e.g. insulin gene has 1431 base pairs. First to be sequenced!
+	\item process of producing a protien:
+		\begin{itemize}
+			\item DNA (double stranded) transcribed into mRNA (single stranded)
+			\item mRNA is transfered out of the nucleis into the gulgi aparatus that translates the mRNA into the polypeptide that then folds into a protein
+			\item transcription to translation to protein
+		\end{itemize}
+	\item RNA is temporary, DNA is forever (at least your lifespan)
+		\begin{itemize}
+			\item RNA is only kept as it transfers information, then is chopped up an recycled.
+			\item they last maybe a matter of seconds
+		\end{itemize}
+	\item Every 3 nucleic acids , a \textbf{codon}  codes for a specific amino acid
+		\begin{itemize}
+			\item e.g. the final amino acid sequence of the final peptide that is produced (110 amino acids)
+			\item this is how we go from 4 `letters' in nucleic acids to 26 `letters' in amino acids
+			\item e.g. ACG codes for some specific amino acid
+			\item at the end of the day, this allows for 64 amino acids to be coded for, so some aminno acids can be produced by more than one codon.
+		\end{itemize}
+	\item Genes code for specific protiens!
+		\begin{itemize}
+			\item Each gene will be a sequence in the long DNA molecule
+			\item each gene is tacked onto the next
+			\item the DNA is folded up into \textbf{chromosomes} for tight storage, held together by protiens 
+		\end{itemize}
+\end{itemize}
+
+
+\end{document}
