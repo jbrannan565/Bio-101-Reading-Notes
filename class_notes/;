@@ -1,0 +1,137 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Week 4 Lecture 2}
+\author{Jared Brannan }
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{bbm}
+\usepackage{bm}
+\usepackage{physics}
+
+% indent first line
+\usepackage{indentfirst}
+
+\theoremstyle{definition}
+
+\newcommand{\upRiemannint}[2]{
+\overline{\int_{#1}^{#2}}
+}
+\newcommand{\loRiemannint}[2]{
+\underline{\int_{#1}^{#2}}
+}
+
+\newtheorem{definition}{Definition}
+\newtheorem{asside}{Asside}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{example}{Example}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{puzzle}{Puzzle}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+
+
+\begin{document}
+\maketitle
+
+\section{Administrative drivel}
+\begin{itemize}
+	\item Class avg on exam: about $53\%$.
+	\item Exam will be passed back probably Monday.
+	\item First paper submission is next Friday.
+\end{itemize}
+
+\section{More on nucleic acids...}
+\begin{itemize}
+	\item  Nucleic acids are used for energy storage: ATP
+	\item This is for energy \textit{transfer,}  not really storage
+	\item ATP: Adenosine Tri-Phosphate
+		\begin{itemize}
+			\item energy is stored in the bonds (between 3 phosphate groups (alpha,beta, gamma))
+			\item breaking off the alpha group releases the energy by adding water, resulting in a Phosphate and Adenosine diphosphate (ADP)
+				\begin{itemize}
+					\item H2O + ATP = P + ADP + ENERGY
+				\end{itemize}
+			\item The reverse process builds ATP
+				\begin{itemize}
+					\item ADP + P + ENRGY = H2O + ATP
+				\end{itemize}
+			\item these 2 processes are carried out by enzymes
+			\item ``money of matabolism"
+			\item has the same basic structure of a nuclic acid
+			\item sometimes the beta bond is broken, into AMP (Adenosine monophosphate), but much less often
+		\end{itemize}
+	\item There is a process for breaking down glucose, and trapping that energy into the bonds of ATP
+	\item clicker q: Of which polymer is a gene composed? DNA
+\end{itemize}
+
+Thus concludes the organic molecules.
+
+\section{Cells}
+Clicker q: What biological polymer is between transcription and translation? RNA
+
+Polymer: a chemical structure made up of many repeating molecules (poly-mer means "many repeating units")
+
+\subsection{Membranes}
+
+\begin{itemize}
+	\item Basic structure: Phospholipid bilayer
+	\item Front (anterior) back (posterior)
+	\item cells undergo cell division to multiply by splitting
+	\item shows the example of a roundworm cell deviding into the full oranism c-elegans
+	\item endoplasmic reticulum: where RNA is turned into proteins
+	\item Cells are structured!
+		\begin{itemize}
+			\item phospholipid bilayer (see those notes)
+		\end{itemize}
+	\item cells are water based!
+	\item inter/intracellular liquid is mostly water
+	\item see  picture of cell
+	\item All of the structures (organelles) in a cell are membrane bound in eukareotes (not so in prokareotes!)
+		\begin{itemize}
+			\item organelle = "little organ"
+		\end{itemize}
+	\item In the nucleus, DNA translated into RNA in DNA, RNA translated into protiens in the endoplasmic reticulum
+	\item The Mitochondria makes ATP
+	\item Solutions:
+		\begin{itemize}
+			\item \textbf{Medium/solvent} (e.g. water, and is the main one)
+				\begin{itemize}
+					\item water allows biochemistry to occur in most situations, except for lipids, which need help (from enzymes?)
+				\end{itemize}
+			\item \textbf{Solute} (e.g. salt, sugar, proteins, ions, hormones, etc)
+			\item \textbf{Concentrationn} = (amount of dissolved stuff) / volume
+			\item Within the solution, particles move at RANDOM
+				\begin{itemize}
+					\item This porcess of random movement is called diffusion
+					\item diffusion is good for transmitting molecules over short distances, but not over long distances
+					\item any organism bigger than a few centimeters need extra structures to overcome this
+				\end{itemize}
+		\end{itemize}
+	\item Diffusion:
+		\begin{itemize}
+			\item If particles are clumped in one area, their random movement will eventually distribute them evenly inn the water (this is called \textbf{Diffusion})
+			\item partices move from high concentration to low concentration
+		\end{itemize}
+	\item Passive diffusion:
+		\begin{itemize}
+			\item The phospholipid bilayer is permiable to some small molecules (most don't)
+				\begin{itemize}
+					\item only really small things can get through
+					\item e.g. CO2
+					\item Fat soluble things can also pass through!
+				\end{itemize}
+			\item If there is a concentration gradient between the inside and outside of the membrane, molecules will pass through the membrane to get the consentration to be even using diffusion.
+			\item Since the membrane isn't all that permiable, the concentration gradient is never really even
+		\end{itemize}
+\end{itemize}
+
+
+\end{document}
