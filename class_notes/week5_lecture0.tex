@@ -1,0 +1,183 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Week 5 Lecture 0}
+\author{Jared Brannan }
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{bbm}
+\usepackage{bm}
+\usepackage{physics}
+
+% indent first line
+\usepackage{indentfirst}
+
+\theoremstyle{definition}
+
+\newcommand{\upRiemannint}[2]{
+\overline{\int_{#1}^{#2}}
+}
+\newcommand{\loRiemannint}[2]{
+\underline{\int_{#1}^{#2}}
+}
+
+\newtheorem{definition}{Definition}
+\newtheorem{asside}{Asside}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{example}{Example}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{puzzle}{Puzzle}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+
+
+\begin{document}
+\maketitle
+
+\section{Administrative drivel}
+\begin{itemize}
+	\item Exams are in: $\mu = 51.6\%$
+	\item the curve is $23.4\%$, so add that percent to your score to get your actual score
+	\item no clicker qs today
+\end{itemize}
+
+\section{More on Cells}
+\begin{itemize}
+	\item Passive diffusion
+		\begin{itemize}
+			\item molecules in high concentration move accross the membrane to low concentration
+			\item only happens for molecules that can pass through the membrane
+				\begin{itemize}
+					\item Non-polar lipids
+					\item hydrophobic molecules
+					\item e.g. fat soluble vitamins -- vitamin A, K, E
+					\item Gasses: O2, CO2
+						\begin{itemize}
+							\item this is nice, since O2 is an input of metabolic activity, and CO2 is an output of metabolic activity
+						\end{itemize}
+					\item Plus H2O (to some extent)
+						\begin{itemize}
+							\item not as smoothly as oxygen and CO2
+							\item the polarity of water makes it move through slowly
+							\item cells have ways of accelerating this
+							\item this is called osmoses
+						\end{itemize}
+				\end{itemize}
+			\item most molecules are regulated accross the membrane
+		\end{itemize}
+	\item What doesn't cross by passive diffusion?
+		\begin{itemize}
+			\item Most biological molecules --
+				\begin{itemize}
+					\item anything large or polar (e.g. glucose, proteins
+				\end{itemize}
+			\item Ions -- anything with a charge (e.g. $Na^+$)
+		\end{itemize}
+	\item \textbf{Osmosis}: movement of water accross a membrane
+		\begin{itemize}
+			\item It gets its own name since it's the solvent inn which biochemistry happens
+			\item Movement of water through biological membrane if one sie has more solutes (salt, sugar) than the other
+			\item this is a slow-ish process, since H2O is polar
+			\item if you increase the concentration something that cannot pass through the membrane on one side of the membrane, the water will move accross the membrane to acheive equilibrium.
+			\item other forces may prevent equilibrium from occuring  (e.g. gravity)
+			\item gravity prevents all of the water ending up on one side of the membrane
+			\item there is also reverse osmosis
+		\end{itemize}
+	\item clicker q: Why are biological membranss so important?
+		\begin{itemize}
+			\item Provide structural organization
+			\item allow the cell to regulate what goes in and out
+			\item they seperate the inside and outside of the cell
+				\begin{itemize}
+					\item Metabolic processes produce toxins, and it's good to get them out
+						\begin{itemize}
+							\item e.g. amonia
+						\end{itemize}
+				\end{itemize}
+		\end{itemize}
+	\item proteins in the membrane
+		\begin{itemize}
+			\item Because the membrane is a barrier tomost things that need to get into the cell (e.g. glucose) or out of the cell (e.g. waste molecules) there are proteins in the membraane that assist with such  movements
+			\item a protien is placed in the membrane that creates a channel for the specific molecule the cell ``wants" to allow through the membrane
+			\item charge points allow the protiens to prevent certian molecultes from getting through.
+			\item two kinds:
+				\begin{itemize}
+					\item Fascilitated diffusion (AKA passive transport thru channel) -- movement \textit{down}  the gradient from areas of high to lowconcentration
+					\item Active transport -- movement is \textit{against}  the gradient from areeas of low to high concentration (requires expenditure of energy/ATP)
+				\end{itemize}
+		\end{itemize}
+	\item Facilitated diffusion -- 2 kinds
+		\begin{itemize}
+			\item A channel protien: opens a tube to allow 1 kind oof molecule through
+				\begin{itemize}
+					\item bi-directional, kind of indescriminate
+					\item useful for ions and pollar molecules
+						\begin{itemize}
+							\item all have their own channel (cute)
+						\end{itemize}
+					\item no energy required
+				\end{itemize}
+			\item A carrier protien: pacman like mechanism allows specific molecule through 1 at a time
+				\begin{itemize}
+					\item opening changes its shape to move a molecule from one side to the other
+					\item allows rate to be regulated
+					\item typically bidirectional
+					\item still passive (high to low concentration)
+					\item no energy required
+			\item there are unidirectional protiens, but they're beyond this course
+			\item there are hundreds of these
+		\end{itemize}
+	\item Active trasport -- requires energy
+		\begin{itemize}
+			\item Expends ATP
+			\item still has a pathway to move molecules, but you need energy to move it
+			\item very few kinds of these molecular "pumps" (12 ish)
+			\item most common is the sodium-potasium pump
+				\begin{itemize}
+					\item used in muscle contraction, movement of info
+					\item takes in 2 potasiums or 3 sodiums, and moves the potasium from the outside of the cell to the inside, and sodium moves from the inside to the outside
+					\item phosphate breaking off atp changes the shape
+					\item each cycle take 1 ATP: phosphate broken off to expend sodium, then the phosphate is broken off of the protien to  pull the phosphates in
+					\item allowing these imballances of gradients make potential energy for later use in work
+				\end{itemize}
+			\item moves molecules against the concentration gradient
+		\end{itemize}
+	\item \textbf{Endocytoss and Exocytosis}
+		\begin{itemize}
+			\item What is used when things are to \textbf{big} foor carier protiens
+			\item Invelopes the object in a peice of the cell membrane
+			\item this makes a vexical
+			\item exo  -- gets things out
+				\begin{itemize}
+					\item membrane around the object fuses with the cell membrane on exit
+				\end{itemize}
+			\item endo -- gets things in
+				\begin{itemize}
+					\item folds the cell membrane to make a pocket that breaks away from the cell membrane
+				\end{itemize}
+			\item throughout this process there is \textbf{NEVER} a hole in the cell membrane
+			\item if a hole were made, the cell would die
+		\end{itemize}
+	\item parts of the cell:
+		\begin{itemize}
+			\item Membrane -- seperates in from out
+			\item cytoplasm -- liquid inside the cell
+				\begin{itemize}
+					\item mostly water
+				\end{itemize}
+			\item Organells -- structures inside the cell
+				\begin{itemize}
+					\item separated by membranes, so the same principals of transport apply to organelle membranes
+				\end{itemize}
+		\end{itemize}
+\end{itemize}
+
+
+\end{document}
