@@ -1,0 +1,160 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Week 5 Lecture 1}
+\author{Jared Brannan }
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{bbm}
+\usepackage{bm}
+\usepackage{physics}
+
+% indent first line
+\usepackage{indentfirst}
+% one inch margins
+\usepackage[margin=1.0in]{geometry}
+
+\theoremstyle{definition}
+
+\newcommand{\upRiemannint}[2]{
+\overline{\int_{#1}^{#2}}
+}
+\newcommand{\loRiemannint}[2]{
+\underline{\int_{#1}^{#2}}
+}
+
+\newtheorem{definition}{Definition}
+\newtheorem{asside}{Asside}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{example}{Example}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{puzzle}{Puzzle}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+
+
+\begin{document}
+\maketitle
+
+\section{Administrative drivel}
+\begin{itemize}
+	\item A few exams still need to be collected
+	\item The first draft (polished!) is due Friday at Noon
+\end{itemize}
+
+\section{More on Cells}
+\begin{itemize}
+	\item Parts of cells:
+		\begin{itemize}
+			\item Membrane -- seperates in from out
+			\item Cytoplasm -- liquid inside the ceell
+				\begin{itemize}
+					\item bulk of the volume
+				\end{itemize}
+			\item Organelles -- membrane-bound structures inside the cell
+				\begin{itemize}
+					\item Mitochondria (all eukariotes have) -- double membrane bound
+						\begin{itemize}
+							\item thought to previously have been independent organisms
+							\item traded some of its genetic material with the genetic material of the host
+							\item reproduce independently of the cell
+							\item called the endo-symbiot hypothesis
+							\item Mitochondria are calleld the "powerhouse" of the cell
+						\end{itemize}
+					\item Chloroplasts just in plant cells for photosynthesis -- double membrane bound
+						\begin{itemize}
+							\item Same sub items as mitochondria above, sans powerhouse
+						\end{itemize}
+					\item there are other organelles that are similar to these
+					\item organelles do work for the cell
+				\end{itemize}
+		\end{itemize}
+	\item clicker q: What would the best transport mechanism be for moving a charged ions accross a membrane from high to low concentration? Facilitated diffusion. (not passive diffusion, since ions can't cross the membrane on their own)
+\end{itemize}
+\subsection{Some organelles}
+\begin{itemize}
+	\item Nucleus
+		\begin{itemize}
+			\item only in eukareotic cells
+			\item a prominant structure in the cell, one of the larger
+			\item primary function: house the DNA
+			\item parts: Nucleolus, Chromatin, Nuclear envelope, nuclear pore
+			\item membrane bound, has 2 membranes
+			\item surface covered in openings called nuclear pores that allow bigger things through
+				\begin{itemize}
+					\item allows mRNA to get out
+					\item many other things can get through, but are beyond this course
+				\end{itemize}
+			\item Transciption takes place inside, producing mRNA
+			\item  Nucleolus is involved in managing the chromosomes and DNA (unwinding, rewinding, transcription things, blah)
+			\item Endoplasmic reticulum is attached to the outside (where the protiens are built)
+			\item Chromotin:
+				\begin{itemize}
+					\item Is the DNA
+					\item is an unwound chromosome
+					\item DNA is wrapped around histones (proteins that give structure and organization to the chromosome)
+					\item these bundles around the histones are called nucleosomes
+					\item these are further wrapped into chromosomes
+					\item ths structure is so small that enzymes and other molecules cant get to the information to make mRNA without unwinding the DNA.
+					\item this is outside the nucleolus
+					\item DNA structure:
+						\begin{itemize}
+							\item DNA is a double-helix, but the two helices are separate molecules. These two helices are held together with hydrogen bonds
+							\item one helice is used to make an mRNA during transcription, and the other is used for error correction.
+						\end{itemize}
+				\end{itemize}
+			\item First step in synthesizing a protein:
+				\begin{itemize}
+					\item A section of DNA (i.e. a gene) is copied into a strand of mRNA
+						\begin{itemize}
+							\item DNA unzipped
+							\item Commplementary copy made 
+							\item DNA rezips
+						\end{itemize}
+				\end{itemize}
+		\end{itemize}
+	\item Endopllasmic reticulum (ER)
+		\begin{itemize}
+			\item This is the membrane system close to and connected to the nucleus
+			\item mRNA leaves the nucleus through a pore and into the ER
+			\item is continuous with the membrane of the nucleus
+			\item there is a rough and smooth ER
+				\begin{itemize}
+					\item the rough has ribosomes on it between layers
+						\begin{itemize}
+							\item ribosomes run the translation to build the polypeptites that will fold into proteins
+							\item mRNA is read from one end to the other fand assembles the amino acid chain. (there's a start code and a stop code)
+							\item reads a codon, grabs the amino acid and adds to the chain, then to the next codon, adds the amino acid, and so on.
+							\item there are thousands, and each mRNA goes to exactly one ribosome
+							\item made up of 80-90 protiens
+							\item the polypeptide is released in the inner layers of the endoplasmic reticulum, where it's transported to an end of the ER, where a little vesel is formed to be transported to the gulgi apperatus
+						\end{itemize}
+					\item rough is directly connected to the nucleus and the smooth is connected to the rough
+					\item smooth doesn't have any ribosomes, hence it is smooth
+						\begin{itemize}
+							\item doesn't recieve direct instruction from the nucleus
+							\item produces fatty acids and steroids
+							\item these are coded for indirectly (no genes)
+							\item proteins that have been made in the rough ER come back from the gulgi aperatus to build fatty acids and steroids.
+						\end{itemize}
+				\end{itemize}
+			\item hollow, with an internal space, and a space between layers
+			\item 2 functions: smooth for lipids, rough for protiens
+				\begin{itemize}
+					\item the resultant molecules are retained or exocytoesd for use elsewhere
+					\item protiens go to the Golgi aperatus where it's modified to become a functional protien (e.g. ends might be cut off)
+					\item lipids are modified in the Golgi aperatus as well
+				\end{itemize}
+		\end{itemize}
+	\item clicker Q: What do the blobs (green ribosomes) do? Translate mRNA sequence into a chain of amino acids
+\end{itemize}
+
+
+\end{document}
