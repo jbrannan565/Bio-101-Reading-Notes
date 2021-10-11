@@ -1,0 +1,193 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Week 7 Lecture 0}
+\author{Jared Brannan }
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{bbm}
+\usepackage{bm}
+\usepackage{physics}
+
+% indent first line
+\usepackage{indentfirst}
+% one inch margins
+\usepackage[margin=1.0in]{geometry}
+
+\theoremstyle{definition}
+
+\newcommand{\upRiemannint}[2]{
+\overline{\int_{#1}^{#2}}
+}
+\newcommand{\loRiemannint}[2]{
+\underline{\int_{#1}^{#2}}
+}
+
+\newtheorem{definition}{Definition}
+\newtheorem{asside}{Asside}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{example}{Example}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{puzzle}{Puzzle}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+
+
+\begin{document}
+\maketitle
+
+\section{Administrative drivel}
+\begin{itemize}
+	\item
+\end{itemize}
+
+\section{Anatomy and Physiology}
+
+\subsection{Muscles}
+\begin{itemize}
+	\item The ends of the sarcomeres are reffered to sometimes as zlines
+	\item Contraction
+		\begin{itemize}
+			\item Actin-myosin cycle:
+				\begin{itemize}
+					\item Myosin binds to actin
+					\item myosin changes position, pulling on actin
+					\item myosin releases actin, ATP binds at this final step
+				\end{itemize}
+			\item repeating this cycle shortens the sarcomere.
+			\item If ATP is absent, myosin cannot release
+			\item rigor mortis sest  in because after death ATP dwindles and eventually runs out
+				\begin{itemize}
+					\item myosin is left permanently bound to the actin
+				\end{itemize}
+			\item this is the same thing as a cramp!
+			\item Nerve cells stimulate muscle contraction:
+				\begin{itemize}
+					\item \textit{Nerve}  cells release neurotransmitter (chem. signal)
+					\item It \textit{Binds to receptors}  in the plasma membrane of the nuscle cell (fiber)
+					\item Causes increases in calcium ions ($CA^{2+}$) inside the cell (stored in the smooth ER/ sarcoplasmic reticulum)
+						\begin{itemize}
+							\item each actin is normally covered by an accessory protien, but the ions open up the actin for binding
+						\end{itemize}
+					\item Calcium causes shift in protein (tropomyosin) that blocks myosin from binding to actin
+					\item Myosin can interact with actin $\to$ contraction
+				\end{itemize}
+			\item Both $CA^{2+}$ and ATP are involved
+		\end{itemize}
+	\item Relaxation
+		\begin{itemize}
+			\item Calcium is pumped back into the SER
+			\item w/o CA++, cacium regulated protein blocks myosin binding site on actin
+			\item myosin cannoot bind any more / no more contraction
+			\item Muscle relaxation occurs as antagonistic muscle dooes it's job via the tendons, pulls the muscle back to the relaxed length
+		\end{itemize}
+	\item To recap:
+		\begin{itemize}
+			\item Basic structure: sarcomere
+			\item made of thin filament of actin, thick of myocin with movable heads
+			\item nervous system sends a nerotransmitter, traveling to a T tubiul, down SER, leading to the relase of CA++
+			\item the CA++ acts on the accessory protiens
+				\begin{itemize}
+					\item 2 kinds: troponin and tropoomyosin (former pulls on the latter to expose the binding sites on the actin when exposed to CA++)
+				\end{itemize}
+			\item At the sarcomere, myosin heads 'walk' along actin filament
+				\begin{itemize}
+					\item myosin binds to actin
+					\item ATP is broken, releasing the phosphate, moving the myosin head to the next binding site
+				\end{itemize}
+			\item ~20 cm of contraction is spread across ~100,000 sarcomeres
+		\end{itemize}
+	\item Different types of muscle fiber: slow twitch and fast twitch
+		\begin{itemize}
+			\item Almost all muscles have both, and one might dominate the other depending on use and genes, etc
+			\item slow twitch develops with arobic, fast twitch with quick motions
+			\item slow twitch has high endurance relative to fast twitch
+			\item slow twitch
+				\begin{itemize}
+					\item lots of blood supply
+					\item lots of mitocondria
+					\item lots of myoglobin (binds to oxygen, much like hemoglobin)
+					\item less gglycogen
+					\item more stamina
+					\item less diameter
+					\item less tension
+					\item Aerobic -- requires high $O_2$ delivery
+						\begin{itemize}
+							\item $O_2$ present
+							\item Glucose $\to$ pyruvic acid + 2ATP
+							\item pyruvic acid $\to$ $CO_2 + H_2O$ + 34 ATP
+						\end{itemize}
+					\item most of what we do is slow twitch
+					\item small movments, sitting upriight, endurance
+				\end{itemize}
+			\item fast twitch
+				\begin{itemize}
+					\item Lower blood supply
+					\item fewer mitochondria
+					\item Less myoglobin
+					\item Lots of glycogen
+					\item less stamina
+					\item bigger diameter
+					\item more tension
+					\item anaerobic -- does not require high $O_2$
+						\begin{itemize}
+							\item $O_2$ absent
+							\item Glucose $\to$ pyruvic acid + 2 ATP
+							\item pyruvic acid $\to$ Lactic acid
+								\begin{itemize}
+									\item (lactic acid is eventually split into pyruvic acid and put back throuogh aerobic cycle)
+								\end{itemize}
+						\end{itemize}
+					\item breif powerful movment
+				\end{itemize}
+		\end{itemize}
+	\item \textbf{Hypertorphy}  is due to increase in number of myofibrils, but not the number of cells (think body builders)
+		\begin{itemize}
+			\item Each muscle cell has multiple myofibrils
+		\end{itemize}
+	\item \textbf{Atrophy}  loss of muscle mass is a normal part of aging, and is impacted by nutritian , exercise. Also occurs if a limb is inactive for several months
+	\item Anabolic steroids:
+		\begin{itemize}
+			\item Testosterone-like chemicals, stimulates actin and myosin production
+			\item cheating, long term side effects
+		\end{itemize}
+	\item Clicker Q: calcium does NOT stimulate ATP breakdown
+	\item end of play...
+\end{itemize}
+
+\section{Cardiovascular system}
+\subsection{Heart}
+\begin{itemize}
+	\item In the thoracic cavity and protected by the ribs
+	\item has 4 pumps that push blood through the pulmonary and systemic circuits
+	\item Cardo == heart
+	\item vasular == blood vessels
+	\item Functions of cardio system:
+		\begin{itemize}
+			\item blood picks up all of the waste from cells/tissues (e.g.$CO_2$)
+			\item blood caries things to the cells/tissues (e.g. $O_2$, glucose)
+			\item Transport immune cells
+			\item causees clotting
+			\item trasport hormones
+			\item transports water
+			\item etc.
+		\end{itemize}
+	\item What color is blood?
+		\begin{itemize}
+			\item books show blood as red inn the arteries, and blue in the veins
+			\item blood is \textit{not} blue
+			\item oxygenated blood is bright red, deoxygenated blood is a little darker red
+		\end{itemize}
+\end{itemize}
+
+
+
+
+\end{document}
