@@ -1,0 +1,155 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Week 9 Lecture 1}
+\author{Jared Brannan }
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\graphicspath{ {./figures/} }
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{bbm}
+\usepackage{bm}
+\usepackage{physics}
+
+% indent first line
+\usepackage{indentfirst}
+% one inch margins
+\usepackage[margin=1.0in]{geometry}
+
+\theoremstyle{definition}
+
+\newcommand{\upRiemannint}[2]{
+\overline{\int_{#1}^{#2}}
+}
+\newcommand{\loRiemannint}[2]{
+\underline{\int_{#1}^{#2}}
+}
+
+\newtheorem{definition}{Definition}
+\newtheorem{asside}{Asside}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{example}{Example}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{puzzle}{Puzzle}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+
+
+\begin{document}
+\maketitle
+
+\section{Administrative drivel}
+\begin{itemize}
+	\item exams will be graded by monday at the latest
+	\item Revised paper due Nov, 8th at 11:59pm
+		\begin{itemize}
+			\item \underline{Turn on tracking} for the paper revision!
+			\item the grade will be no lower than the first grade.
+		\end{itemize}
+\end{itemize}
+
+\section{Anatomy and Physiology}
+\subsection{Respiratory system}
+\begin{itemize}
+	\item Breathing -- control
+	\item rate control
+		\begin{itemize}
+			\item There are monitors on the blood composition (main in the carated artery in the neck)
+			\item Chemoreceptors in aorta and carotid arteries increase rate when $O_2$ drops too low, or $CO_2$ gets too height
+			\item several other bain areas are also involved
+		\end{itemize}
+	\item normal breating -- 500 ml in and out (about 1 pint) == ``\textbf{tidal volume}"
+		\begin{itemize}
+			\item \textit{Forced}  inhalation can bring in additional air: around 3300mL in males, or 1900 mL in females
+			\item \textit{Forced} exhalaltion can foce  out additional air: around 1000mL in males, or around 700mL in females
+			\item even after forced exhalation, some residual air remains, stuck in incompressible spaces (e.g. trachea) or in alveoli, holding them open for a total of about 1100-1200mL of space
+			\item this give the total lung air volume of 3200-6000mL or .75-1.5 gallons
+			\item $O_2$ in the blood drops only by about a quarter when it passes through the tissues
+		\end{itemize}
+	\item \textbf{Respiration} 
+		\begin{itemize}
+			\item Beathing == pulling air in and out of the lungs
+			\item \textbf{Respiration}  == exchanging gases between air and tissues
+			\item \textbf{Respiration}  == exchange of gases between air in the alveoli and capillary blood surrounding the alveoli \textcolor{red}{Diffusion driven by difference in concentration} between gases in air and gases in blood
+			\item gases  will independently diffuse down their gradients
+			\item Recall from membranes -- $O_2$ and $CO_2$ are small and non-poolar so they move through membranes.
+		\end{itemize}
+	\item Gas exchange in an alveolus:
+		\begin{itemize}
+			\item blood comes from the heart into a capilary surrounding the alveoli, gas exchange ocurs, then blood is sent down a vein to the heart all oxygenated and with less $CO_2.$
+			\item There are chemicals inside the alveolus that keeps it from getting stuck in a collapsed position
+		\end{itemize}
+	\item Gas transport -- oxygen
+		\begin{itemize}
+			\item $O_2$ has low solubility in liquids, and doesnt convert to other molecules (covalent bonds), but loves to bind to hemoglobin once it reaches
+				\begin{itemize}
+					\item ie, $O_2$ is not very reactive with anything in the blood till it gets to the hemoglobin's iron molecule 
+				\end{itemize}
+		\end{itemize}
+	\item clicker q: what is the diaphragm? The muscle below the ribs that is involved in breathing
+	\item Red blood cells AKA erythrocytes
+		\begin{itemize}
+			\item concentration of oxygen in the plasma is low, since much of it binds to hemoglobin, allowinng more oxygen to diffuse the plasma from the lungs
+			\item Each cell carries about 200 million hemoblobin molecules
+			\item oxygen bind to the \textbf{heme} group -- it contains $Fe^{2+}$ (iron ions)
+				\begin{itemize}
+					\item hence the red color
+				\end{itemize}
+			\item Each hemoglobin can bind $4O_2.$
+		\end{itemize}
+	\item as transport -- carbon dioxide
+		\begin{itemize}
+			\item Higher (but still low) solubility in liquids than oxygen
+			\item Redily forms \textit{carbonic acid}  in water, breaks into $H^+$ and \textit{bicarbonate} (This is the form that $CO_2$ is caried in the blood (in the plasma))
+			\item $CO_2 + H_2O \to H_2CO_3 \to H^+ + HCO_3^-$
+			\item $CO_2$ is combined with $H_2O$ by an enzyme
+			\item at the lungs, this proocess reverses
+			\item  The $H^+$ ion tends to interact with hemoglobin to knock off the $O_2$ from the hemoglobin (from increased Ph)
+			\item $CO_2$ can also bind to hemoglobin
+		\end{itemize}
+	\item recall, in mitochondra: $C_6H_{12}O_6 + 6O_2 \to 6CO_2 + 6H_2O + 36ATP$
+		\begin{itemize}
+			\item $O_2$ is required to get the most ATP possible, $CO_2$ is wast product from this process.
+		\end{itemize}
+	\item so, aside from breathing, resperation is passive!
+	\item \underline{Carbon monoxide} poisoning:
+		\begin{itemize}
+			\item $CO$ is produced by gasoline engines, power tools,, poorly functioning furnaces / stoves
+				\begin{itemize}
+					\item Colorless, odorless -- hard to detect
+					\item preferentially binds to hemoglobin, so not as much $O_2$ can bind, thus, tissues are deprived of oxygen.
+				\end{itemize}
+		\end{itemize}
+	\item \underline{Diseases}
+		\begin{itemize}
+			\item Infection and inflamation
+				\begin{itemize}
+					\item The lungs are 100\% humidity, and warm, which is a perfect place for infectious organisms to thrive
+					\item Fumes from cars can make $O_3$, an iritant for tissues, iritating the tissues, stimulating an imune response causing inflamation
+				\end{itemize}
+			\item Problems with air transport (in or out)
+				\begin{itemize}
+					\item Constrictions or restrictions
+					\item choking
+				\end{itemize}
+			\item Problems with gas diffusion
+		\end{itemize}
+	\item \textbf{Asthma}  -- inflamation of the bronchioles
+		\begin{itemize}
+			\item iritation of the lining of the bronchi, causing the muscles in the walls to constrict, reducing the diameter of the passageway
+			\item mucus is released
+		\end{itemize}
+\end{itemize}
+
+
+
+
+
+
+\end{document}
