@@ -1,0 +1,189 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Week 10 Lecture 0}
+\author{Jared Brannan }
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\graphicspath{ {./figures/} }
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{bbm}
+\usepackage{bm}
+\usepackage{physics}
+
+% indent first line
+\usepackage{indentfirst}
+% one inch margins
+\usepackage[margin=1.0in]{geometry}
+
+\theoremstyle{definition}
+
+\newcommand{\upRiemannint}[2]{
+\overline{\int_{#1}^{#2}}
+}
+\newcommand{\loRiemannint}[2]{
+\underline{\int_{#1}^{#2}}
+}
+
+\newtheorem{definition}{Definition}
+\newtheorem{asside}{Asside}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{example}{Example}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{puzzle}{Puzzle}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+
+
+\begin{document}
+\maketitle
+
+\section{Administrative drivel}
+\begin{itemize}
+	\item Exams are here!
+		\begin{itemize}
+			\item curve: 26.5
+			\item mean: 48.5
+		\end{itemize}
+\end{itemize}
+
+\section{Defence and repair -- immune system}
+\begin{itemize}
+	\item Note: this is a simplification compared to real world imunology!
+		\begin{itemize}
+			\item at least we'll get to see some gross images.
+		\end{itemize}
+	\item There's no one organ in the body that's responsible for immunity.
+	\item There are 3 main systems that act mostly independly with some coordination
+	\item The structure of organisms allow to distinguish between ``me" and others -- i.e. the body knows what cells are its own
+	\item  Recognizing the difference between self and not-self is the \textcolor{red}{basis for immunity}
+	\item there are non-self organisms that the body wants to keep around, cause they're helpful, but for our purposes we'll ignore them.
+	\item  You have around 10 or 20 trillion cells, and the immune system can recognize them. Cells that are not yours do not have markers that the immune cells will recognize as bellonging to you! 
+	\item further, non-self cells have markers on their surface that identify their particular type, allowing the immune system to specialize it's response against that specific kind of non-self cells.
+		\begin{itemize}
+			\item this can take weeks to develope
+		\end{itemize}
+	\item There are more immediate responses the body can mount
+	\item clicker q: what is not a pathogen?
+		\begin{itemize}
+			\item roundworms -- this is a parasite and a pathogen
+			\item bacteria that can only live in the soil -- this on is not
+			\item yeast in the cheek
+			\item influenza
+		\end{itemize}
+	\item Who wants in?
+		\begin{itemize}
+			\item Foreign invaderse:
+				\begin{itemize}
+					\item parasites
+					\item bacteria
+					\item viruses
+						\begin{itemize}
+							\item a bit unusual, as they need to invade a cell to copy themselves
+							\item typically not considered living
+						\end{itemize}
+					\item fungi
+						\begin{itemize}
+							\item e.g. ring worm or yeast infections
+						\end{itemize}
+				\end{itemize}
+			\item a \textbf{Pathogen}  is a disease-causing organism, usually microbe
+			\item Note, most bacteria are beneficial or  neutral, and some viruses are beneficial or neutral.
+				\begin{itemize}
+					\item So, it's not a good idea to try to get rid of all of these things
+				\end{itemize}
+		\end{itemize}
+	\item What is ``IN"?
+		\begin{itemize}
+			\item pathogens have to enter the body
+			\item things on the surface don't tend to cause many problems
+			\item Consider the donut -- a short tube of tissue
+				\begin{itemize}
+					\item we take the top of the hole as the mouth, and the bottom hole to be the anus
+					\item Only the yummy bits past the glaze that is considered \textit{inside}  -- this is where the pathogens wanna be
+				\end{itemize}
+		\end{itemize}
+	\item  We injest lots of pathogens, but most of them get killed in the gut, or are passed otherwise
+	\item If they make it through the walls of the gut or through the body surface, then you have an infection
+		\begin{itemize}
+			\item likewise with the lungs -- the pathogens must make it through the walls of the lungs to infect
+				\begin{itemize}
+					\item e.g. tb eating the walls of the alveoli
+				\end{itemize}
+		\end{itemize}
+	\item Maintaining the \textbf{ME / NOT ME}  barrier:
+		\begin{itemize}
+			\item There are 3 lines of defense
+		\end{itemize}
+	\item Innate immunity:
+		\begin{itemize}
+			\item Generalized defense against a general enemy
+				\begin{itemize}
+					\item 1. physical barriers -- first line
+					\item 2. recognition of ``non-self", but not specifically who the invader is -- second line
+				\end{itemize}
+		\end{itemize}
+	\item Acquired immunity
+		\begin{itemize}
+			\item \textit{Specific}, trained defense against a \textit{specific} enemy
+				\begin{itemize}
+					\item recognition of a \textbf{unique} invader
+					\item not just which species of invader, but also whcih \textit{strain} 
+				\end{itemize}
+		\end{itemize}
+	\item Phyiscal barriers:
+		\begin{itemize}
+			\item Skin! -- the epidermis is made up of (largely) dead cells filled with karetin
+				\begin{itemize}
+					\item New cells migrate to the top of the skin, where they die, completely filled with karetin, and get densely packed 
+						\begin{itemize}
+							\item these cells also secrete lipids (from the sabatious glands, specifically sebum) conditioning the skin (keeping it from drying out and cracking) -- this oil is also not pleasent for most micro-organisms, as it's hydrophobic (it's hard to survive without water)
+							\item The tight packing (along with adhesion molecules holding the cells together) makes it hard to get between them into the tissues.
+						\end{itemize}
+					\item karetin is not a good diet for micro-organisms (usually), so they tend to not survive
+					\item karetin is hydrophobic, so it's dry
+					\item further, the top layer gets shed off constantly, so the would-be invaders get sloughed off
+				\end{itemize}
+		\end{itemize}
+	\item \textbf{Cilia}  (tiny hair-like projects in the nose and resperitory tract beat and move particles trappepd in mucus (snot) towards exit (nostril, or goes into gut))
+		\begin{itemize}
+			\item looks kind of like shag carpet
+			\item moves in a coordinated fassion, moving  the mucus up and out
+		\end{itemize}
+	\item Skin has to open in a few places:
+		\begin{itemize}
+			\item mouth, nose, anus, urethra, vagina
+		\end{itemize}
+	\item \textbf{Chemical barriers} defend these openings
+		\begin{itemize}
+			\item Openings are lined by mucous membranes that have the following:
+			\item \textbf{Oils} -- secreted by oil glands in the skin
+				\begin{itemize}
+					\item Forms a hydrophobic film over the skin -- pathogens slide off and can't penetrate
+					\item keeps the skin from cracking
+				\end{itemize}
+			\item \textbf{Salts} -- secreted by swet glands and tear glands
+				\begin{itemize}
+					\item Salty env is not tolerate by many pathogens (high salt outside bacterial cell causes water to diffuse out of those cells)
+				\end{itemize}
+			\item \textbf{Slaiva}  -- secreted by salivary glands
+				\begin{itemize}
+					\item   contains an enzyme called \textcolor{red}{lysozyme}, which breaks open bacteria
+					\item lysol does the same things as this enzyme
+				\end{itemize}
+		\end{itemize}
+	\item smell or appereance of food is also a defence -- senses:
+		\begin{itemize}
+			\item rotten food tends to smell or look funny
+		\end{itemize}
+\end{itemize}
+
+
+
+\end{document}
