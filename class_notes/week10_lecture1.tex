@@ -1,0 +1,181 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Week 10 Lecture 1}
+\author{Jared Brannan }
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\graphicspath{ {./figures/} }
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{bbm}
+\usepackage{bm}
+\usepackage{physics}
+
+% indent first line
+\usepackage{indentfirst}
+% one inch margins
+\usepackage[margin=1.0in]{geometry}
+
+\theoremstyle{definition}
+
+\newcommand{\upRiemannint}[2]{
+\overline{\int_{#1}^{#2}}
+}
+\newcommand{\loRiemannint}[2]{
+\underline{\int_{#1}^{#2}}
+}
+
+\newtheorem{definition}{Definition}
+\newtheorem{asside}{Asside}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{example}{Example}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{puzzle}{Puzzle}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+
+
+\begin{document}
+\maketitle
+
+\section{Administrative drivel}
+\begin{itemize}
+	\item  Last day to pick up exams
+	\item Lecture images through respiration are posted
+	\item The review sheet through respiration has been posted -- to be updated up till wednesday
+	\item Those with 100\% on the term papers, submit without revision
+\end{itemize}
+
+\section{Defence and repair -- immune system}
+\begin{itemize}
+	\item \textbf{Chemical barriers}  -- review
+		\begin{itemize}
+			\item Oils
+			\item  Salts
+			\item Saliva -- lysozyme
+				\begin{itemize}
+					\item Dodgs have a lot of lysozyme, so getting licked can be beneficial
+				\end{itemize}
+		\end{itemize}
+	\item \textbf{More chemical barriers} 
+		\begin{itemize}
+			\item \textbf{Acid}  -- secreted by the stomach
+				\begin{itemize}
+					\item Hydrochloric acid chemically rips apart  pathogens
+						\begin{itemize}
+							\item Cells in the walls produce this acid
+							\item also assists with digestion
+							\item Allows pepsidogen to be broken into pepsin -- beginning of protien digestion, then finished in the small/large intestin
+							\item the stomach also mechanically breaks the food down
+							\item The stomach mainly functions for the storage of food (so you don't have to eat constantly exposing you to danger), and 
+							\item the high acid level kills contaminants in food
+						\end{itemize}
+					\item pH = 2 (between lemon juice and battery acid)
+				\end{itemize}
+			\item \textbf{Helpers}  -- beneficial bacteria and fungi -- ``probiotics"
+				\begin{itemize}
+					\item Large populations in the gut outcompete pathogens
+						\begin{itemize}
+							\item makes it harder for outsiders to get a foothold
+						\end{itemize}
+					\item Glycogen secreted within the vagina promotes \textit{Lactobacillus}  bacteria, which consume glycogen and convert it back to lactic acid
+				\end{itemize}
+		\end{itemize}
+	\item \textbf{Oh no}  -- the barrier is breached
+		\begin{itemize}
+			\item Damage to the skin give pathogens acces to your insides
+			\item Need to builid the walls back up
+		\end{itemize}
+	\item Wound repair: -- what needs to happen
+		\begin{itemize}
+			\item Stop blood loss
+				\begin{itemize}
+					\item Clotting does this
+				\end{itemize}
+			\item Remove damaged and dead cells 
+			\item Destroy any pathogens that got in
+				\begin{itemize}
+					\item battle.
+				\end{itemize}
+			\item Reconstruct the barrier
+				\begin{itemize}
+					\item epidermis grows back in along with some scar tissue
+				\end{itemize}
+		\end{itemize}
+	\item Stop blood loss:
+		\begin{itemize}
+			\item 1. \textbf{Vasoconstriction} 
+				\begin{itemize}
+					\item min continuing blood loss
+				\end{itemize}
+			\item 2 \textbf{Platelet}  activation
+				\begin{itemize}
+					\item Platelets stick to the injury site
+					\item platelets change shape, becoming sticky
+					\item platelets trigger clotting protiens
+					\item clotting proteins activate \textbf{fbrin}  to form a net over the wound
+				\end{itemize}
+			\item 3. \textbf{Clot formation} 
+				\begin{itemize}
+					\item Red blood cells get caught in the net 
+					\item this clot (scab) plgs the wound, blocking further blood loss
+				\end{itemize}
+		\end{itemize}
+	\item Remove damaged and dead cells
+		\begin{itemize}
+			\item \underline{Inflammatory response} brings in clean-up cells
+				\begin{itemize}
+					\item mostly white blood cells
+					\item fight infection and remove damaged or dead cells
+				\end{itemize}
+		\end{itemize}
+	\item Inflamation:
+		\begin{itemize}
+			\item 1. Damaged cells release chemical messengers
+			\item 2. this signals other cells (mast cells) which send a response (histamines)
+			\item 3. Which leads to vasodialation (the sweeling of the capilaries)
+				\begin{itemize}
+					\item This allows larger gaps in the wall to form, allowing white blood cells and fluid into the surrounding tissue to do battle
+					\item The fluid that gets out of the capilaries causes swelling
+				\end{itemize}
+			\item 4. More signals from the damaged cells triger Phagoccytes
+				\begin{itemize}
+					\item macrophages, neutrophils -- white blood cells
+				\end{itemize}
+		\end{itemize}
+	\item \textbf{Phagocytes:} -- type of white blood cell
+		\begin{itemize}
+			\item \textbf{Macrophages and neutrophils}  (phagocytes) can get out of the capillaries near the injury site and into the damaged tissue -- they can move on their own!
+				\begin{itemize}
+					\item each attack and kill in specific ways
+					\item macrophages are the most numerous, and engulf many pathogens into an internal vesicle, bring digestive enzymes in a seperate vesicle to them, and digest them
+					\item neutrophils are suicide bombers, ingulfing the pathogen and killing themselves, releasing chemicals that kill nearby cells
+				\end{itemize}
+			\item 1. Mast cells cells detect injury to nearby cells and release histamine, initiating inflamatory response
+			\item 2. Histamine increases blood flow to the wound sites, bringing in phagoocytes and other immune cells that neutralize pathogens. 
+			\item Phagocytes die, turning into pus
+			\item pimple == dead phagocytes after fighting a bacterial infection of an oil gland in a hair folicle
+		\end{itemize}
+	\item Bacteria are evereywhere in the environment, so generally some enter in a wound, thus, usually some to kill off.
+	\item Reconstruct the barrier
+		\begin{itemize}
+			\item Reconnect the vasculature
+				\begin{itemize}
+					\item remaining capillaries grow toward the wound site, and toward each other
+				\end{itemize}
+			\item Rebuild the physical structure
+				\begin{itemize}
+					\item epidermal cells reconnect under the scab
+					\item extracellular collagen protein gets deposited into the wound site under the epidermis
+					\item repair collagen is slightly different in structure and arrangement than normal skin collagen -- \textbf{scar} 
+				\end{itemize}
+		\end{itemize}
+\end{itemize}
+
+\end{document}
