@@ -1,0 +1,162 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Week 11 Lecture 0}
+\author{Jared Brannan }
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\graphicspath{ {./figures/} }
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{bbm}
+\usepackage{bm}
+\usepackage{physics}
+
+% indent first line
+\usepackage{indentfirst}
+% one inch margins
+\usepackage[margin=1.0in]{geometry}
+
+\theoremstyle{definition}
+
+\newcommand{\upRiemannint}[2]{
+\overline{\int_{#1}^{#2}}
+}
+\newcommand{\loRiemannint}[2]{
+\underline{\int_{#1}^{#2}}
+}
+
+\newtheorem{definition}{Definition}
+\newtheorem{asside}{Asside}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{example}{Example}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{puzzle}{Puzzle}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+
+
+\begin{document}
+\maketitle
+
+\section{Administrative drivel}
+\begin{itemize}
+	\item Second submission for the term paper due at 11:59pm today!
+	\item The review sheet covers more than we will get to, but we'll only cover through wednesday's lecture.
+	\item Lecture images are posted as well.
+\end{itemize}
+
+\section{Defence and repair -- immune system}
+\begin{itemize}
+	\item Last time -- the B-cell system -- some review
+		\begin{itemize}
+			\item Identifies specific pathogens for distruction
+			\item then, phagocytes come and goble the pathogens that are marked
+			\item It can take several weeks to go from B-cell activation, to plasma cell generation by cloning, to memory B-cells.
+			\item but, memory cells can complete this process before you even notice
+			\item having memory cells == immunity
+		\end{itemize}
+	\item Specific Immunity -- extracellular
+		\begin{itemize}
+			\item pathogen enters the body
+			\item Pathogen have uniqe surface protiens == 'antigens
+			\item B-cells have receptor surface proteins == 'antibodies'
+			\item B-cells mark pathogens for destruction by mathing their antibodies to the pathogens' antigens
+			\item B-cells  shed antibodies into the blood
+			\item antibodies bindd to antigens 
+			\item bound antigens clump together and are taken out by phagocytes
+		\end{itemize}
+	\item clicker Q: What can't B-cells fight off intracellular infections? intracellular pathogens are inside your body's cells, where their antigens are hidden from B-cells
+\end{itemize}
+\subsubsection{Intracellular infection}
+\begin{itemize}
+	\item Pathogen enters the body
+	\item pathogen endocytosed by ``antigen-presenting cells" -- APCs
+		\begin{itemize}
+			\item APCs are T-cells
+			\item dendritic cell -- has lots of arms
+		\end{itemize}
+	\item APC breaks apart pathogen to find antigens by digesting it
+	\item APC presents antigens to ``cytoxic T cells" teaching them how to recognize infected cells
+		\begin{itemize}
+			\item cytoxic T cells can bind to the antigen being presented
+			\item If they can bind, they are activated
+		\end{itemize}
+	\item Cytotoxic T cells multiply, then migrate to attack infected body cells
+		\begin{itemize}
+			\item this means they're killing your own cells.
+		\end{itemize}
+	\item after the infection is reduced, some of the T cells stick around and become memory T cells
+		\begin{itemize}
+			\item Some are good for a lifetime, and some are good for a few years
+			\item If they see the antigen again, they will kill those cells
+		\end{itemize}
+\end{itemize}
+\subsubsection{How does your body match a novel antigen?}
+\begin{itemize}
+	\item If an antigen is like a lock, you need a key of exactuly the right shape (antibody)
+	\item Make many different keys, and keep trying until one works
+	\item antibodies are made of
+		\begin{itemize}
+			\item 2 heavy chains (larger) and 2 light chains (smaller)
+			\item There are many types of each kind of chain, and combining different ones makes an antibody that can bind to a different antigen.
+			\item This allows the body to generate millions of different antibodies (2-3 million)
+			\item  They are aranged very slopy
+			\item Actively promote mutations in the genes that code for these proteins
+				\begin{itemize}
+					\item randomly produce new versions of chains
+				\end{itemize}
+			\item this gives us more than 2 billion possible antibodies
+		\end{itemize}
+	\item Once you find the right key(antibody), create effector cells that mark the pathogens for destruction, then some of the effectors are saved as memory cells for rapid reactivaation without having to find the right key (antibody)
+	\item Acquired -- secondary response
+		\begin{itemize}
+			\item First infection starts small, grows, and your response grows along with it
+				\begin{itemize}
+					\item This takes 2-3 weeks before B-cell population out produces the pathogen population growth
+				\end{itemize}
+			\item On second exposure, the infection starts small, but the B-cell population spikes rapidly
+				\begin{itemize}
+					\item This is the secondary immune response
+					\item this allows us to not spend most of our lives sick...
+					\item If you have this response, we say you're immune
+				\end{itemize}
+		\end{itemize}
+	\item We can trick the system into making the antibody with vaccine
+		\begin{itemize}
+			\item The antigen part of the pathogen, or a killed version of the pathogen is used to induce production of memory cells
+			\item So, if the person is exposed to the real pathogen, it already has the memory cells/antibodies to fight the infection
+			\item this allows you to mount a secondary response upon first exposure
+		\end{itemize}
+	\item Vaccination has been around since the late 1700s
+		\begin{itemize}
+			\item Edward Jenner -- 1796 -- figured out a sequence of things to do to give immunity to small pox!
+			\item He extrapolated that Milk Maides didn't get small pox from folklore about them being pretty! This was because cows got cowpox, a closely related pathogen, which exposed the maids to similar antigens to those on small pox
+			\item So, Jenner too people and exposed them to cow pox by rubbing puss into wounds on a person, and they would gain immunity
+		\end{itemize}
+	\item How long can immunity last?
+		\begin{itemize}
+			\item Smallpox memory B-cells last for  >50 years
+			\item Tetanus booster vaccinations recommeded every 10 years
+			\item Professor is unsure why some fade faster than others...
+		\end{itemize}
+\end{itemize}
+\subsubsection{Influenza}
+\begin{itemize}
+	\item Why do we need a flu shot every year?
+		\begin{itemize}
+			\item There are many strains of flu, and it mutates rapidly
+			\item Vaccinations cover the strain that is predicted to come the following year
+			\item We loose 20-30k people per year, but during the COVID pandemic we lost about 10k last year
+		\end{itemize}
+\end{itemize}
+
+
+
+
+\end{document}
