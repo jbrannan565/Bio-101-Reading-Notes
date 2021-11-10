@@ -1,0 +1,224 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Week 11 Lecture 1}
+\author{Jared Brannan }
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\graphicspath{ {./figures/} }
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{bbm}
+\usepackage{bm}
+\usepackage{physics}
+
+% indent first line
+\usepackage{indentfirst}
+% one inch margins
+\usepackage[margin=1.0in]{geometry}
+
+\theoremstyle{definition}
+
+\newcommand{\upRiemannint}[2]{
+\overline{\int_{#1}^{#2}}
+}
+\newcommand{\loRiemannint}[2]{
+\underline{\int_{#1}^{#2}}
+}
+
+\newtheorem{definition}{Definition}
+\newtheorem{asside}{Asside}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{example}{Example}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{puzzle}{Puzzle}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+
+
+\begin{document}
+\maketitle
+
+\section{Administrative drivel}
+\begin{itemize}
+	\item Exam on friday!
+		\begin{itemize}
+			\item covers through today's lecture
+			\item lecture images are up
+			\item study guide has more in it than the exam will cover, but will be updated today to contain just the relevant info
+		\end{itemize}
+\end{itemize}
+
+\section{Diseases}
+\begin{itemize}
+	\item clicker q: What would happen if a virus infected and disables your APCs? T-cells would no longer be able to recognize antigens
+		\begin{itemize}
+			\item This is not a common occurance!
+			\item This is one of the major problems with HIV
+			\item has anyone done this through Gain of function?
+		\end{itemize}
+	\item Infectious disease is:
+		\begin{itemize}
+			\item Transimittable
+			\item communicable
+			\item contagious
+			\item you can catch it from someone else
+		\end{itemize}
+	\item Non-infectious diseases don't have the above properties
+		\begin{itemize}
+			\item E.g. lung cancer can't be transmitted to others (aside from through second hand smoke I suppose)
+		\end{itemize}
+	\item COVID is highly infectious
+	\item the most important factor in spreading rate is the number of susceptible infectees
+	\item probably know which diseases are infectious and not infectious out of the study guide list
+	\item Types of infectioous diseases:
+		\begin{itemize}
+			\item Viruses
+			\item bacteria
+			\item fungi
+			\item micro-organisms
+			\item parasites
+		\end{itemize}
+	\item Example non-infectious diseases:
+		\begin{itemize}
+			\item Cancer (usually)
+			\item kidney disease
+			\item liver cirrhosis
+			\item dietary difficiencies
+			\item genetic disorders
+		\end{itemize}
+	\item Viruses:
+		\begin{itemize}
+			\item parts:
+				\begin{itemize}
+					\item spikes
+					\item envelope
+					\item capsid
+					\item nucleic acid (RNA or DNA)
+					\item some have head, sheath, tail fibers
+					\item all but nucleic acids are made of protiens
+				\end{itemize}
+			\item they can only reproduce by taking over the transcription mechanism of a cell
+			\item some viruses (bacteriaphages) kill bacteria
+			\item no metabolism
+			\item Non-living organisms
+			\item NOT made of cells
+				\begin{itemize}
+					\item just a protein coat with DNA or RNA inside
+				\end{itemize}
+			\item DO NOT acquire and use energy
+			\item CAN NOT reproduce without a host cell
+			\item there are other non-living things that cause disease
+				\begin{itemize}
+					\item e.g. mad cow disease is just a self replicating protien
+				\end{itemize}
+		\end{itemize}
+	\item Steps of viral infection:
+		\begin{itemize}
+			\item The surface has protiens that allow it to bind to cells
+				\begin{itemize}
+					\item they must be the right shape for the host cell
+					\item so, who the virus attacks is fairly specific
+				\end{itemize}
+			\item They trick the cell into bringing the virus in
+			\item Take over the host cell machinery to produce the protiens that their nucleic acids code for
+				\begin{itemize}
+					\item Reverse transcription is hijacked if RNA to turn it into DNA, transcription is hijacted if DNA
+					\item makes copies of itself
+				\end{itemize}
+			\item Viral copies break off of the host, allowing them to spread
+		\end{itemize}
+	\item Viral diseases:
+		\begin{itemize}
+			\item Rabies
+				\begin{itemize}
+					\item no good treatments, deadly
+				\end{itemize}
+			\item flu
+			\item cold
+			\item measles
+				\begin{itemize}
+					\item You've been vaccinated for, yay
+				\end{itemize}
+			\item polio
+				\begin{itemize}
+					\item Jonas Salk gave us a vaccine in 1950s
+					\item muscle wasting illness (yikes)
+				\end{itemize}
+			\item zika
+				\begin{itemize}
+					\item newer!
+					\item suddenly became common, and made it to florida
+				\end{itemize}
+			\item HIV
+				\begin{itemize}
+					\item Taken out millions WW, 100ks in US in 80s, 90s
+				\end{itemize}
+			\item smallpox
+				\begin{itemize}
+					\item Edward Jenner did the thing to vaccinate, but we have a real one now.
+					\item Only disease that we've eliminated from the wild! :D
+						\begin{itemize}
+							\item killed out by vaccinating almost everyone
+							\item trying to do the same with polio, but wars are making it hard, along with cultures with stigmas against vaccines or outsiders
+						\end{itemize}
+					\item 2 places in the world have the virus in test tubes
+				\end{itemize}
+			\item hepatitis
+				\begin{itemize}
+					\item A,B,C,E, C most common, degenerates liver and can kill you
+				\end{itemize}
+			\item Ebola
+		\end{itemize}
+	\item Ebola -- scary -- symptoms
+		\begin{itemize}
+			\item doesn't tend to reside in humans (but wild life can transmit to humans)
+			\item sudden fever
+			\item intense weakness
+			\item muscle pain and headache
+			\item vomiting
+			\item diarrhea
+			\item impaired kidney and liver function
+			\item internal and external bleeding
+			\item usually results in death in a matter of days
+			\item doesn't spread easily between humans, but is more common in cultures where people are in close contact with the dead bodies of infected
+			\item HIGH  mortality -- about 50\% by as high as 90
+			\item 2014-16 outbreak
+				\begin{itemize}
+					\item began in W. Africa
+					\item more than 28,000 cases (+4 in US)
+					\item more than 11k deaths (+1 in US)
+				\end{itemize}
+			\item Low infectiousness
+				\begin{itemize}
+					\item ONLY via direct contact with infected body fluids (of which there can be a lot)
+				\end{itemize}
+			\item Tracking epidemics (who.int has system of reporting cases)
+			\item Subsequent smaller scale outbreaks are still happening
+		\end{itemize}
+	\item Influenza and colds
+		\begin{itemize}
+			\item Highly contagious
+				\begin{itemize}
+					\item person-to-person
+					\item airborne
+				\end{itemize}
+			\item Flu has low martality rate
+				\begin{itemize}
+					\item usually less than 5 in 100k
+					\item up to 100 in 100k during pandemics
+					\item but high infectiousness == 20-30k+ deaths per year in the US, 291K-646K worldwide
+						\begin{itemize}
+							\item Almost all of these are elderly, the immune-compromised, or the residents of the poorest countries
+						\end{itemize}
+				\end{itemize}
+			\item ``Common Cold" is caused by several different viruses
+		\end{itemize}
+\end{itemize}
+
+\end{document}
