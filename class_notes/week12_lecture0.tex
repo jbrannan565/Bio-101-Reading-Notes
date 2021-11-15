@@ -1,0 +1,219 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Week 12 Lecture 0}
+\author{Jared Brannan }
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\graphicspath{ {./figures/} }
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{bbm}
+\usepackage{bm}
+\usepackage{physics}
+
+% indent first line
+\usepackage{indentfirst}
+% one inch margins
+\usepackage[margin=1.0in]{geometry}
+
+\theoremstyle{definition}
+
+\newcommand{\upRiemannint}[2]{
+\overline{\int_{#1}^{#2}}
+}
+\newcommand{\loRiemannint}[2]{
+\underline{\int_{#1}^{#2}}
+}
+
+\newtheorem{definition}{Definition}
+\newtheorem{asside}{Asside}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{example}{Example}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{puzzle}{Puzzle}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+
+
+\begin{document}
+\maketitle
+
+\section{Administrative drivel}
+\begin{itemize}
+	\item A few make ups for the exam still need to be done
+	\item Exam grades should be up by the end of the week -- saturday at the latest
+\end{itemize}
+
+\section{Diseases}
+\begin{itemize}
+	\item Viral diseases:
+		\begin{itemize}
+			\item highly contagious
+				\begin{itemize}
+					\item person-to-person
+					\item airborne
+				\end{itemize}
+			\item Flu has a low mortality rate
+				\begin{itemize}
+					\item usually less than 5 in 100k
+					\item up to 100 in 100k during pandemics
+					\item highly infectious = 20-30kk+ deaths per year in US, 291k-646k world wide
+						\begin{itemize}
+							\item most common among elderly, immune-compromised, or residents in poor countries
+								\begin{itemize}
+									\item e.g. people on immuno-supresant drugs
+								\end{itemize}
+							\item not a trivial number -- 20-30k is almost as many as die in car crashes yearly
+							\item This number dropped to 2k during the COVID pandemic, due to measures to reduce COVID infections.
+						\end{itemize}
+				\end{itemize}
+			\item ``Common cold" is caused by several different viruses
+		\end{itemize}
+	\item ``Spanish Flu" epidemic of 1918
+		\begin{itemize}
+			\item killed around 5\% of the world's population (1 million in US)
+			\item Killed more people that both world wars combined
+			\item In todays number that would be
+				\begin{itemize}
+					\item 350 million people (approximately the entire population of the US)
+				\end{itemize}
+			\item Still around, but we have vaccines and built up immunity
+		\end{itemize}
+	\item Pandemics seem to happen about every 70 years
+	\item Seasonal influenza:
+		\begin{itemize}
+			\item Several types and subtypes:
+			\item Influenza virus Type A:
+				\begin{itemize}
+					\item H1N1 (1918 spanish, 2009 swine)
+					\item H_2N_2
+					\item H_3N_2 (2017-18 bad flu, maybe)
+					\item H_5N_1 (Bird flu 2004)
+					\item lots of other subtypes
+					\item often transissible among humans, birds, pigs
+				\end{itemize}
+			\item Type B and C
+			\item Flus live among other animals and jump to us
+		\end{itemize}
+	\item Flu Vaccine production
+		\begin{itemize}
+			\item Within each virus Type and Subtype, there are lots of mutant strains
+				\begin{itemize}
+					\item Each mutant  strain may carry unique antigens
+				\end{itemize}
+			\item more than 100 countries continually monitor flu strains and send represientative samples to the WHO to make a prediction of what flu strains will be prevelant
+			\item In Feb the WHO begins creating a vaccine to match predictions of the following season's flu antignes (they begin in Sept of S. Hemisphere flu)
+			\item If they're lucky, the flus that circulate are covered by the vaccine
+		\end{itemize}
+	\item Vaccine safety
+		\begin{itemize}
+			\item so, even if vaccines are effective, isn't there somme concern about side effects?
+			\item about 1 in a million will get severe side effects, most will get some side effects from vaccines
+				\begin{itemize}
+					\item E.g. paralysis that takes 1/2-1 year to recover
+				\end{itemize}
+			\item Mercury preservatives blamed for
+				\begin{itemize}
+					\item Developmental disorders (i.e. autism)
+					\item Elemental mercury: $Hg$ the heavy metal itself
+					\item Methylmercury: $Hg^+-CH_3$  in fish
+						\begin{itemize}
+							\item Causes minomona disease
+							\item severe birth defects
+							\item this is why pregnant women are recommended to not eat fish
+							\item Mercury from coal burning goes from the atmosphere into the water through rain, and the herbivorous fish eat it, then the carnivore fish eat the herbivorous ones, building up even more in their fat.
+						\end{itemize}
+					\item Etheylmercury: $Hg^+-CH_2-CH_3$ In vaccines
+						\begin{itemize}
+							\item Same as ethylalcohol, but with mercury
+						\end{itemize}
+					\item Mercury has 2 moes of action:
+						\begin{itemize}
+							\item Binds to some nerve cell receptors, innterferes with nervous system (developement)
+							\item Binds to sulfur -- important component in some amino acid, interfering with protien synthasis
+						\end{itemize}
+					\item Autism -- 1998 study in \textit{The Lancet}  claimed a link between MMR vaccines and autism
+						\begin{itemize}
+							\item lead to vaccine hesitancy, and this has persisted
+							\item This has not been able to be replicated...
+							\item but could not be refuted (over past 20 years)
+							\item The formulation of vaccines was changed removing the mercury, but autism continues to orise
+							\item \textit{The Lancet} retracted the article due to methedological issues and conflicts of interest
+						\end{itemize}
+				\end{itemize}
+		\end{itemize}
+	\item Viral treatments
+		\begin{itemize}
+			\item  Antibiotics \textbf{DO NOT WORK} 
+			\item Wait it out
+			\item Anti-viral drugs
+				\begin{itemize}
+					\item HIV
+					\item COVID
+					\item These reduce the severity of symptoms
+				\end{itemize}
+			\item vaccinations
+		\end{itemize}
+	\item Bacteria:
+		\begin{itemize}
+			\item e.g. cocci, strepptococci, staphylococci 
+				\begin{itemize}
+					\item cocci means sphere
+					\item bacteria tend ot be named by their shape
+					\item others are rods, cork screws, etc.
+				\end{itemize}
+			\item Human body has
+				\begin{itemize}
+					\item around 30 trillion of our own cells
+					\item around 40 trillion are bacteria (2000 species)
+						\begin{itemize}
+							\item mostly in the gut
+							\item also on the surface
+							\item these are helpful!
+						\end{itemize}
+				\end{itemize}
+			\item Diseases:
+				\begin{itemize}
+					\item plague
+					\item Lyme disease
+					\item syphilis
+					\item tuberculosis
+					\item tetanus
+					\item cholera
+					\item leprosy
+				\end{itemize}
+			\item Treatment:
+				\begin{itemize}
+					\item Antibiotics \textbf{DO} work
+						\begin{itemize}
+							\item Break down or prevent formation of the bacterial \underline{cell walls}
+							\item Interfere with bacterial \underline{ribosomes}
+							\item Interfere with essential bacterial \underline{metabolic pathways}
+						\end{itemize}
+					\item doesn't effect eukareotes
+					\item Histoory of antibiotics
+						\begin{itemize}
+							\item 1928 -- Alexander Fleming -- Penicilin discovery in fungus
+							\item 1940s -- penicilin devveloped
+								\begin{itemize}
+									\item Pushed by infection-based death rate in WW1 concern of same things in WWII
+								\end{itemize}
+							\item Team from Oxford, UK, developed it as a useful medication
+							\item Eli Lilly in the US got production scaled up inn time for it to be used on the front
+							\item Since then, we have on the order of 100 antibiotics
+								\begin{itemize}
+									\item Vancomycin, Tetracycline, Amoxilicillin, etc
+								\end{itemize}
+						\end{itemize}
+				\end{itemize}
+		\end{itemize}
+	\item Clicker Q: why can't antibiotics be used on viruses? They dont have cell walls, ribosomes, or a matobolism
+\end{itemize}
+
+\end{document}
