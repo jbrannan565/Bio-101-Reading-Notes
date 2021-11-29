@@ -1,0 +1,192 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Week 13 Lecture 0}
+\author{Jared Brannan }
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\graphicspath{ {./figures/} }
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{bbm}
+\usepackage{bm}
+\usepackage{physics}
+
+% indent first line
+\usepackage{indentfirst}
+% one inch margins
+\usepackage[margin=1.0in]{geometry}
+
+\theoremstyle{definition}
+
+\newcommand{\upRiemannint}[2]{
+\overline{\int_{#1}^{#2}}
+}
+\newcommand{\loRiemannint}[2]{
+\underline{\int_{#1}^{#2}}
+}
+
+\newtheorem{definition}{Definition}
+\newtheorem{asside}{Asside}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{example}{Example}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{puzzle}{Puzzle}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+
+
+\begin{document}
+\maketitle
+
+\section{Administrative drivel}
+\begin{itemize}
+	\item Exam grades are not in yet
+	\item we're throwing out the senses, since we won't be worried about this  till we're in our 50s
+	\item So, we'll proceed to nutrition and digestion
+	\item next week we'll cover ecosystem processes and human impact
+\end{itemize}
+
+\section{Nutrition}
+\begin{itemize}
+	\item Why do we eat?
+		\begin{itemize}
+			\item We must acquire from the enviornment the energy and building blocks to run our activities
+			\item Building blocks
+				\begin{itemize}
+					\item Things that don't provide energy
+					\item provide molecules for building structures, protiens, etc
+				\end{itemize}
+			\item calories (energy)
+				\begin{itemize}
+					\item Plants can turn light into chemical energy, but we have to get our energy through calories in food
+					\item the principle form of chemical energy for humans is glucose
+					\item The energy we get ultimately comes from plants, who get it from the sun
+				\end{itemize}
+		\end{itemize}
+	\item Nutrients -- the things we need to survivie
+		\begin{itemize}
+			\item Macronutrients -- need lots
+				\begin{itemize}
+					\item carbohydrates
+						\begin{itemize}
+							\item bulk of the mass of plants
+						\end{itemize}
+					\item lipids
+					\item protiens
+						\begin{itemize}
+							\item Heavy meat intake leads to weight gain, and cardiovascular disease with potential shortened life
+						\end{itemize}
+				\end{itemize}
+			\item Micronutrients -- need small amounts
+				\begin{itemize}
+					\item vitamins
+					\item minerals
+				\end{itemize}
+		\end{itemize}
+	\item macronutrients:
+		\begin{itemize}
+			\item \textbf{Protiens}
+				\begin{itemize}
+					\item Amino acids, polypeptides
+					\item Importantly, they get turned into digestive enzymes
+					\item Recycle into your own proteins 
+						\begin{itemize}
+							\item break apart ingested proteins into individdual amino acids
+							\item Assemble amino acids into proteins at the ribosomes
+						\end{itemize}
+					\item Some are built into nucleic acids
+						\begin{itemize}
+							\item recall that both hamino acids are nucleic acides are N-based (nitrogen based)
+						\end{itemize}
+					\item Minor source of energy
+						\begin{itemize}
+							\item turned into glucose
+							\item They aren't usually stored, and get urinated out
+							\item So, a steady supply is needed
+							\item when protiens are broken down, there are left over nitrogens in the form of amonia, which is toxic, which needs to be evacuated in the urine
+						\end{itemize}
+				\end{itemize}
+			\item \textbf{Carbohydrates} 
+				\begin{itemize}
+					\item Sugars, starches, glycogen
+						\begin{itemize}
+							\item Glycogen is the animal material form of starch
+								\begin{itemize}
+									\item most of which is found in the liver
+									\item also a long chain molecule of glucoses
+								\end{itemize}
+						\end{itemize}
+					\item Main source of energy
+						\begin{itemize}
+							\item starches and other polysaccharides get broken down to sugar
+							\item sugar (esp. glucose) burned to make ATP
+								\begin{itemize}
+									\item carried in the blood to almost all of the cells
+								\end{itemize}
+						\end{itemize}
+					\item plants build the starches during the day with excess glucose, so they have energy at night when they don't have the sun
+				\end{itemize}
+			\item \textbf{Lipids} 
+				\begin{itemize}
+					\item Fatty acids, triglycerides, cholesterol
+					\item build cell membranes
+					\item secondary source of energy
+						\begin{itemize}
+							\item much more enrgy-dense than carbohydrates
+							\item used as a storage molecule
+							\item have a lot more energy than carbs per pound
+						\end{itemize}
+				\end{itemize}
+		\end{itemize}
+	\item Energy
+		\begin{itemize}
+			\item All macro nutrients can be used for ATP productionn
+			\item \textbf{METABOLISM} == convert food into energy or building blocks
+			\item $C_6H_{12}O_6 + 6O_2 \to 6CO_2 + 6H_2O + 36ATP$ -- respiration (inverse of photosynthesis)
+			\item ATP "density"
+				\begin{itemize}
+					\item Glucose = about 34 ATP per glucose molecule
+						\begin{itemize}
+							\item 6 carbons
+						\end{itemize}
+					\item Fatty acides = about 34 ATP per 4 carbons of the FA (fatty acid)
+						\begin{itemize}
+							\item Chain length can be between 6-22 carbons and up
+							\item fatty acids only come in even numbers of carbon
+						\end{itemize}
+				\end{itemize}
+			\item Calorie density:
+				\begin{itemize}
+					\item 4 Calories / gram
+					\item 9 Calories / gram
+					\item so, it's much more weight efficient to store exess energy as fat
+					\item e.g. bird migration is powered by lipids to save weight
+					\item \underline{C}al == 1000 \underline{c}al
+					\item 1 calorie = $5-8\times 10^{19}$ ATP molecules
+					\item So, 1g carbs = 4 Cal = 4000 cal = 200-320 sextillion ATPs
+				\end{itemize}
+		\end{itemize}
+	\item Energy Balance
+		\begin{itemize}
+			\item If average energetic demand equals energetic input, all consumed energy is used for body funcntioning
+			\item if \textit{input exceed demand}, suprlus energy is stored as \textbf{glycogen}  or \textbf{triglyceride}  if not used within hours or days
+			\item Obesity -- one of the leading global causes of preventable eath
+				\begin{itemize}
+					\item 2.5 million/year
+					\item Effects: heat disease, diabetes, arthritis, stroke, dimentia
+				\end{itemize}
+			\item if \textit{demand exceeds input}, stored glycogen and triglycerides are mobilized
+			\item \textbf{Malnutrition} :
+				\begin{itemize}
+					\item Without sufficient calorie intake, body consumes fat resereves, then protein reserves
+				\end{itemize}
+		\end{itemize}
+\end{itemize}
+
+\end{document}
