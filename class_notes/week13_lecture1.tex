@@ -1,0 +1,255 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Week 13 Lecture 1}
+\author{Jared Brannan }
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\graphicspath{ {./figures/} }
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{bbm}
+\usepackage{bm}
+\usepackage{physics}
+
+% indent first line
+\usepackage{indentfirst}
+% one inch margins
+\usepackage[margin=1.0in]{geometry}
+
+\theoremstyle{definition}
+
+\newcommand{\upRiemannint}[2]{
+\overline{\int_{#1}^{#2}}
+}
+\newcommand{\loRiemannint}[2]{
+\underline{\int_{#1}^{#2}}
+}
+
+\newtheorem{definition}{Definition}
+\newtheorem{asside}{Asside}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{example}{Example}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{puzzle}{Puzzle}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+
+
+\begin{document}
+\maketitle
+
+\section{Administrative drivel}
+\begin{itemize}
+	\item Scantrons have been processed, exam scores to be posted in the next few days
+	\item term papers won't be looked at till next week
+\end{itemize}
+
+\section{Nutrition}
+\begin{itemize}
+	\item Malnutrition: a bigger problem for children
+	\item Micronutrients
+		\begin{itemize}
+			\item Needed inn small amounts
+				\begin{itemize}
+					\item Not broken down, but used intact
+					\item used individually, or used to modify macronutrient-based molecules
+					\item may be part of a larger molecule, but the actual nutrient is not broken down
+					\item used along with other molecules to do things
+				\end{itemize}
+			\item Vitamins
+				\begin{itemize}
+					\item Organic molecules -- they have a carbon backbone (carbon based)
+					\item Often used in enzyme pathways, especially for metabolizing or synthesizing other organic molecules
+						\begin{itemize}
+							\item using them in the enzyme pathways makes the enzyme better at their job
+						\end{itemize}
+					\item only the organic molecules that we cannot generate on our own
+						\begin{itemize}
+							\item cows can produce almost all of the vitamins they need!
+							\item this is done by gut bacteria
+						\end{itemize}
+					\item e.g. vitamin c
+						\begin{itemize}
+							\item involved in the productionn of colagen
+							\item so, if you're vitamin c dificicient, you'll fall apart -- scurvey
+							\item captain cook discovered that sour crout prevented the developement of scurvey, not knowing about vitamin C
+						\end{itemize}
+				\end{itemize}
+			\item minerals
+				\begin{itemize}
+					\item Inorganic molecules -- non-carbon based
+					\item often used as ions or crystals
+						\begin{itemize}
+							\item e.g. salt is split into 2 ions 
+						\end{itemize}
+				\end{itemize}
+			\item these cannot be constructed by the body, and need to be injested
+		\end{itemize}
+	\item List of vitamins:
+		\begin{itemize}
+			\item Fat-soluble: A, D, E, K
+				\begin{itemize}
+					\item very common
+					\item disolve in fat
+						\begin{itemize}
+							\item doessn't dissolve well in water
+							\item obsorbs into lipids, fatty tissues
+							\item so, it's hard to get rid of excess, so it is stored as deposits in fatty tissues, which can become toxic
+						\end{itemize}
+					\item A important for light detection
+					\item D is important in growth; bones, muscles
+					\item E important in cell membranes, esp neuro cells
+					\item K important for reasons?
+				\end{itemize}
+			\item Water-soluble: B (1 (thiamine), 2 (riboflavin), 3 (niacin), 5, 6, 7 (biotin), 9 (folic acid), 12), C
+				\begin{itemize}
+					\item folic acid is important during fetal developent, particularly in the spine; not great for males to consume
+					\item disolves in water, so excess is dumped from the kidneys into the urine, so it's virtually impossible to have too much
+				\end{itemize}
+			\item modern food is fortified with vitamins
+		\end{itemize}
+	\item micro -- water soluble vitamins
+		\begin{itemize}
+			\item small quantity needed
+			\item very difficult to overdose
+			\item excess is excreted in urine
+		\end{itemize}
+	\item Vitamin C
+		\begin{itemize}
+			\item Aids in the synthesis of collagen -- important for wound healing
+			\item scurvy: fatigue, bleeding from mucous membranes, spongy gums, tooth loss, open wounds
+				\begin{itemize}
+					\item caused by vitamin C difficiency
+					\item ultimately leads to death
+					\item common in sailors of the past
+				\end{itemize}
+		\end{itemize}
+	\item fat-soluble vitamins
+		\begin{itemize}
+			\item needed in small quantity
+			\item overconsumption can lead to toxicity
+			\item not easy excreted in urine, so are stored in the liver
+				\begin{itemize}
+					\item Hamper liver function when in excess
+				\end{itemize}
+		\end{itemize}
+	\item Vitamin A
+		\begin{itemize}
+			\item beta-carotene -- the pigment that causes the color, and vitamin A is derived from it
+				\begin{itemize}
+					\item found in meat, oorange fruits and veggies
+					\item Immune functioning
+					\item DNA $\to$ RNA (transcription)
+					\item Vission
+				\end{itemize}
+			\item Royal Airforce (british) 1939 -- Airborne Interception Radar
+				\begin{itemize}
+					\item advertised that airmen needed vitamin A in order to see at night
+					\item early WWII
+				\end{itemize}
+		\end{itemize}
+	\item List of minerals;
+		\begin{itemize}
+			\item Calcium (Ca)
+				\begin{itemize}
+					\item important in bones and muscle function
+				\end{itemize}
+			\item Phosphorus (P)
+			\item Potasium (K)
+			\item Solfur (S)
+			\item Sodium (NA)
+			\item Chlorine (Cl)
+			\item Magnesium (Mg)
+			\item Iron (Fe)
+				\begin{itemize}
+					\item important in blood: hemoglobin
+				\end{itemize}
+			\item Iodine (I)
+			\item Manganese (Mn)
+			\item Copper (Cu)
+			\item Cobalt (Co)
+			\item Zinc (Zn)
+			\item Fluorine (Fl)
+				\begin{itemize}
+					\item prevents cavities, since it's highly reactive
+				\end{itemize}
+			\item Selenium (Se)
+			\item Chromium (Cr)
+		\end{itemize}
+	\item minerals:
+		\begin{itemize}
+			\item Some needed in larger quantities (Na, Cl, ,Ca, P)
+			\item Others in trace amounts (S, Co, Mn, Se)
+		\end{itemize}
+	\item Recommended diet
+		\begin{itemize}
+			\item Macronutrients are easy to come by in most foods
+				\begin{itemize}
+					\item most difficult to get is probably protiens -- getting all of the amino acids
+				\end{itemize}
+			\item conusuming too much is the typical problem
+			\item micronutrients can be more challenging
+			\item Not too much 
+				\begin{itemize}
+					\item eat enough calories but not more than you use
+				\end{itemize}
+			\item High diversity
+				\begin{itemize}
+					\item anything in excessive quantity can be bad for you
+				\end{itemize}
+			\item Lots of plants
+				\begin{itemize}
+					\item relatively high in micronutrients
+					\item relatively low in macronutrients
+					\item macroos that are present are usually more complex == more energetically expensive to digest
+				\end{itemize}
+		\end{itemize}
+	\item clicker Q: Why are vitamins and minerals called micro-nutrients? Your body needs these in small amounts
+	\item end of nutritian
+\end{itemize}
+
+\section{Digestive system}
+\begin{itemize}
+	\item clicker q: what hormone is released by the pancreas when blood sugar is high? Insulin
+	\item Functions:
+		\begin{itemize}
+			\item Break down food
+			\item absob nutrients
+			\item dispose of waste
+		\end{itemize}
+	\item Tow major divisions:
+		\begin{itemize}
+			\item \textbf{Gastrointestinal (GI) tract}:
+				\begin{itemize}
+					\item connects mouth $\to$ stomack $\to$ intestines (small and large) $\to$ anus
+				\end{itemize}
+			\item \textbf{Accessory organs} 
+				\begin{itemize}
+					\item Salivary glands
+						\begin{itemize}
+							\item food lubrication
+						\end{itemize}
+					\item pancreas
+						\begin{itemize}
+							\item produces lots of hormones
+						\end{itemize}
+					\item liver
+						\begin{itemize}
+							\item detoxifies food
+						\end{itemize}
+					\item gallbladder
+					\begin{itemize}
+						\item breaks down lipids
+					\end{itemize}
+				\end{itemize}
+		\end{itemize}
+\end{itemize}
+
+
+\end{document}
