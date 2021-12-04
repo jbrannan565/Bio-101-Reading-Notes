@@ -1,0 +1,235 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Week 13 Lecture 2}
+\author{Jared Brannan }
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\graphicspath{ {./figures/} }
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{bbm}
+\usepackage{bm}
+\usepackage{physics}
+
+% indent first line
+\usepackage{indentfirst}
+% one inch margins
+\usepackage[margin=1.0in]{geometry}
+
+\theoremstyle{definition}
+
+\newcommand{\upRiemannint}[2]{
+\overline{\int_{#1}^{#2}}
+}
+\newcommand{\loRiemannint}[2]{
+\underline{\int_{#1}^{#2}}
+}
+
+\newtheorem{definition}{Definition}
+\newtheorem{asside}{Asside}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{example}{Example}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{puzzle}{Puzzle}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+
+
+\begin{document}
+\maketitle
+
+\section{Administrative drivel}
+\begin{itemize}
+	\item Exam booklets are here to pickup
+		\begin{itemize}
+			\item mean 50.5, curve 24.5
+		\end{itemize}
+	\item grade to date will be updated over the weekend to account for the new exam!
+\end{itemize}
+
+\section{Digestive system}
+\begin{itemize}
+	\item Two parts: (review)
+		\begin{itemize}
+			\item GI tract
+				\begin{itemize}
+					\item main tube
+				\end{itemize}
+			\item Accessory organs
+		\end{itemize}
+	\item Processes:
+		\begin{itemize}
+			\item ingestion -- get food into the body (gut)
+				\begin{itemize}
+					\item put it in your mouth
+				\end{itemize}
+			\item mixing -- mix food around and move it through tract
+			\item digestion -- mechanical and chemical break-down
+				\begin{itemize}
+					\item e.g. mechanical: stomach churning, chewing
+					\item e.g. chemical: converting things into molecules that can be used
+				\end{itemize}
+			\item absorption -- pass food molecules into the body
+				\begin{itemize}
+					\item molecules pass through the walls of the GI tract into the blood or lymphatic system to distribute the new molecules for use throughout the body
+				\end{itemize}
+			\item defecation -- get rid of anything left over
+				\begin{itemize}
+					\item poop.
+				\end{itemize}
+		\end{itemize}
+	\item Organ overview -- check canvas for picture!
+		\begin{itemize}
+			\item the red labeled things are accessory organs, the black labeled things are GI tract organs
+		\end{itemize}
+	\item Ingestion -- theeth:
+		\begin{itemize}
+			\item phyiscal breakdown of food -- bring food into the mouth/oral cavity and mastication (grinding the foods, in other words, chewing)
+			\item large items are torn apart by the incisors to make smaller peices
+		\end{itemize}
+	\item Ingestions -- saliva:
+		\begin{itemize}
+			\item salivary glands are considered accessory organs
+			\item lubricate food
+				\begin{itemize}
+					\item saliva is slippery
+					\item also, adds moisture so it's more of a paste
+				\end{itemize}
+			\item Enzymes  start metabolism:
+				\begin{itemize}
+					\item salivary \textbf{amylase} for carbs (starch, glycogen)
+					\item salivary lipase for lipids 
+						\begin{itemize}
+							\item only really active in infants
+						\end{itemize}
+				\end{itemize}
+			\item lysozyme targets bacteria
+				\begin{itemize}
+					\item covered in the immune section
+					\item lots of bacteria on the food we injest
+				\end{itemize}
+		\end{itemize}
+	\item Ingestion -- swallowing
+		\begin{itemize}
+			\item Tongue moves to the roof of the mouth, forcing food into the esophogus where more muscles push the food down into the stomach
+			\item at the back of the throat, the trachea and esophegus meet.
+				\begin{itemize}
+					\item when you swallow, there's a valve at the top of the trachea that closes by the food forcing it closed
+						\begin{itemize}
+							\item valve == epiglotis
+						\end{itemize}
+					\item choking is when this goes wrong
+				\end{itemize}
+		\end{itemize}
+	\item GI tract -- \textbf{peristalsis}  == wavelike muscle movements that push food along
+		\begin{itemize}
+			\item all parts of the GI tract do this
+		\end{itemize}
+	\item Esophagus
+		\begin{itemize}
+			\item Tube
+			\item \textbf{Functions}: transfers food from oral cavity/mouth to stomach
+			\item about 2 feet long
+		\end{itemize}
+	\item Stopmach
+		\begin{itemize}
+			\item Expandable sac with an opening at either end
+			\item Sphincter -- ring of muscles that acts like a valve, controls movement from one section of GI tract to next
+			\item 2 sphincters:
+				\begin{itemize}
+					\item Esophageal -- at the esophogus
+						\begin{itemize}
+							\item prevents stomach acid from getting into the esophagus
+						\end{itemize}
+					\item pyloric -- at the small intesstine
+						\begin{itemize}
+							\item prevents acid from getting into the intestines
+							\item regulates the rate of food entering the intestine
+						\end{itemize}
+				\end{itemize}
+			\item \textbf{Functions}: 1) store and mix food, 2) break down large molecules (chemical), 3) destroy invaders, 4) regulate release of food into intestine
+				\begin{itemize}
+					\item stores food for several hours, allowing for intermitant activity between eating
+					\item this is convinient, since it was once dangerous to go out and hunt for food
+					\item for us now, it just allows us to work or play between meals
+					\item pepsin along with acid breaks down food
+						\begin{itemize}
+							\item most of digestion doesn't occur in the stomach
+							\item pepsin breaks down some protiens
+						\end{itemize}
+					\item amylase breakdown of carbs stops upon entering the stomach
+					\item the most important function is its high acidity
+						\begin{itemize}
+							\item kills most pathogens
+						\end{itemize}
+				\end{itemize}
+			\item "Gastric juices" == 2-3 liters/day
+				\begin{itemize}
+					\item produce protease to digest protiens
+					\item Very acidic: pH = 2
+						\begin{itemize}
+							\item each intiger increase is 10 times the previous integer
+						\end{itemize}
+					\item Low pH helps kill microorganisms
+				\end{itemize}
+			\item Food + gastric juices = thin, watery -- \textbf{Chyme} 
+			\item about a foot long
+		\end{itemize}
+	\item clicker q: where in the GI tract is the first place chemical digestion of food occurs? the mouth (amylase breaking down carbs)
+	\item stomach -- mixing and release:
+		\begin{itemize}
+			\item waves every (about) 15 seconds slosh CHYME around
+				\begin{itemize}
+					\item passes a small amount of chyme to the small intestine
+				\end{itemize}
+		\end{itemize}
+	\item small intestine
+		\begin{itemize}
+			\item one of the longest sections of the GI tract
+			\item on the order of 18 feet
+			\item parts: Duodenum, jejunum, ileum
+			\item Function: 1) Chemical digestion and 2) absorb nutrients, especially macro ones
+				\begin{itemize}
+					\item most chemical digestion happens in the Duodenum (first foot)
+				\end{itemize}
+		\end{itemize}
+	\item Duodenum:
+		\begin{itemize}
+			\item receives bile from the liver (stored in the gal blader) and enzymes from the pancreas
+			\item pancreatic secretions also neutralize low pH of chyme exiting the stomach
+			\item chyme needs to be neutralized before it can be chemically digested, otherwise proteins will denature
+				\begin{itemize}
+					\item this is done with bicarbonate
+				\end{itemize}
+			\item RE Wierd Al's song about the pancreas: flow flow flow pancreatic juice, flow flow, into the duodenum
+		\end{itemize}
+	\item Pancreas
+		\begin{itemize}
+			\item secrete enzymes that digest macronutrients:
+				\begin{itemize}
+					\item carbs broken by -- sucrase and amylase
+					\item proteins broken by -- trypsin
+					\item lipids broken by -- lipase
+				\end{itemize}
+		\end{itemize}
+	\item Liver and gallbladder
+		\begin{itemize}
+			\item \textbf{Bile} -- produced by the liver as a byproduct of hemoglobin and cholesteroll breakdown and stored in the gallblader
+				\begin{itemize}
+					\item attacks lipids
+				\end{itemize}
+			\item Bile salts released into duodenum when high lipid content detected
+			\item Bile emulsifies fats, makes the molecules accessible to lipase
+				\begin{itemize}
+					\item rate of lipase break down of lipids is a function of the surface area to volume ratio of fat chunks, so smaller chunks are broken down faster
+				\end{itemize}
+		\end{itemize}
+\end{itemize}
+							
+\end{document}
