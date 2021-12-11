@@ -1,0 +1,214 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Week 14 Lecture 2}
+\author{Jared Brannan }
+
+\usepackage{natbib}
+\usepackage{graphicx}
+\graphicspath{ {./figures/} }
+\usepackage{mathtools}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xcolor}
+\usepackage{bbm}
+\usepackage{bm}
+\usepackage{physics}
+
+% indent first line
+\usepackage{indentfirst}
+% one inch margins
+\usepackage[margin=1.0in]{geometry}
+
+\theoremstyle{definition}
+
+\newcommand{\upRiemannint}[2]{
+\overline{\int_{#1}^{#2}}
+}
+\newcommand{\loRiemannint}[2]{
+\underline{\int_{#1}^{#2}}
+}
+
+\newtheorem{definition}{Definition}
+\newtheorem{asside}{Asside}
+\newtheorem{conjecture}{Conjecture}
+\newtheorem{example}{Example}
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{puzzle}{Puzzle}
+\newtheorem{corollary}{Corollary}
+\newtheorem{proposition}{Proposition}
+
+
+\begin{document}
+\maketitle
+
+\section{Administrative drivel}
+\begin{itemize}
+	\item Final paper submission grades are on canvas
+	\item Clicker points should be up tomorrow
+\end{itemize}
+
+\section{Climate Change}
+\begin{itemize}
+	\item Most of the warming happens over land and at high latitude
+		\begin{itemize}
+			\item This results in the north pole melting
+			\item Frozen water reflects more radiation back into space than liquid water
+			\item Melting increases the ocean volume  -- sea level rise
+				\begin{itemize}
+					\item only from land ice melting, since ice in the water already displaces how much it would if it were liquid
+				\end{itemize}
+			\item Greenland has a lot of ice that's like 2 miles thick, and if it melts it will rise sea level by 6 feet -- that's a lot
+		\end{itemize}
+	\item The goal is too keep the temp bellow a 2.5 decrees C change from norm
+	\item Glaciers not on the poles are also melting
+		\begin{itemize}
+			\item most of the water that was in the glaciers ends up in the ocean (evenually)
+			\item e.g. kilimanjaro has lost most of its ice over the last 100 years
+			\item Ice and snow contributes a lot to economy (skiing seasons are getting shorter)
+			\item Rivers that are fed by snow and ice are losing volume, leading to water shortages 
+				\begin{itemize}
+					\item e.g. colorado river feeds arizona, california, etc.
+					\item If it rains instead of snows on the mountain in the winter, the summer melts won't be as big
+				\end{itemize}
+		\end{itemize}
+	\item The sea level is rising 1.5-2.2 cm per decade (about an inch
+		\begin{itemize}
+			\item this rate is accelerating
+			\item this will lead to people getting displaced
+				\begin{itemize}
+					\item e.g. venice, london
+					\item There are entire countries where all people live at 6ft above sea level
+				\end{itemize}
+		\end{itemize}
+	\item not only does increased temperatures melt land ice
+		\begin{itemize}
+			\item warmer water occupies more volume than cool water -- this increases sea levels as well
+		\end{itemize}
+	\item The entire coast of florida will flood with a 1 meter sea level rie
+		\begin{itemize}
+			\item further, huricane damage will be greater
+		\end{itemize}
+	\item first world countries can deal with these problems (mostly) -- 2nd and 3rd really cant
+	\item most people live within 100 miles of a coast -- humans like living near water
+	\item Changes in precipitatoin due to increasing temps
+		\begin{itemize}
+			\item Rainfall is increasing in some areas!
+			\item This can lead to flooding, mudslidess, etc
+				\begin{itemize}
+					\item Elivated soil temps will make them drier, even though there is more rain, so crop raising will be harder
+				\end{itemize}
+			\item Storms will be bigger -- Hurricanes and Typhons
+				\begin{itemize}
+					\item More energy in the atmosphere leads too higher winds
+				\end{itemize}
+		\end{itemize}
+	\item Species' Rnages 
+		\begin{itemize}
+			\item Climate change changes where species can survive
+			\item Butterflies and moths on the west coast are making mass migration out of their usual areas
+			\item This also applies to crop plants, farm animals, and other species that we are dependent on
+			\item e.g. sugar maple trees are having to be grown futher north with temp increase
+				\begin{itemize}
+					\item This migration may require an assist
+				\end{itemize}
+			\item many species wont adjust fast enough, and will go extinct
+				\begin{itemize}
+					\item e.g. polar bears and walruses are dependent on the water ice, so they will likely go extinct
+				\end{itemize}
+		\end{itemize}
+	\item Desertification -- iappropriate land use\
+		\begin{itemize}
+			\item compounded by
+				\begin{itemize}
+					\item Overgrazing
+					\item poor aggriculture practices
+				\end{itemize}
+			\item increased temperature will reduce soil moisture retention
+			\item higher temps alone will reduce crop yeilds even if desertification isn't a problem, locally
+		\end{itemize}
+	\item Human land use + climate change has massive ecological impact
+		\begin{itemize}
+			\item Greater than their solo controbutions
+			\item There are interactoins (statistical sense), impact is more than an addition of two independent effects
+			\item Hbitat loss has been extensive -- especially conversoin to agriculture and urban/suburban landscapes, especially near water
+			\item we're losing a lot of land area that could be used for agg to suburban sprawl
+		\end{itemize}
+	\item These problems can be reversed:
+		\begin{itemize}
+			\item IPCC -- guidance on Climate change (replace most fossil fuels, change agg practices, change how we build and maintain structures, etc.)
+			\item BUT \textcolor{red}{\textbf{TIME IS CRITICAL}}  -- we need to act within the next decade or two to prevent irreversible damage
+		\end{itemize}
+	\item Political statement from prof -- the last 4 years where a real shit show as far as adressing climate change 
+	\item Nuclear is only a temp solution -- if we switched to 100\% nuclear we'd only have about 45 years of fuel
+	\item There are many deniers, and people who are worried about the cost, but we won't damage the enviornment/society by fixing these things. The worst that will occur is some people won't be as wealthy
+\end{itemize}
+
+\section{Biodiversity decline -- the 6th mass extinction}
+\begin{itemize}
+	\item This is as big of a problem as climate change
+		\begin{itemize}
+			\item There's a complex network of species dependencies, and if this network is changed too much, the castcade could be catistrophic
+			\item this includes humans
+		\end{itemize}
+	\item The evidence is becoming grim 
+		\begin{itemize}
+			\item Fisheries in the Asia-Pacific will have no fish in the oceans by 2048...
+			\item More than half of the world's fisheries are harvestedd at or beyond capacity
+			\item We tend to harvest a desirable species until it declines or crashes
+		\end{itemize}
+	\item This is a case of the ``Tragedy of the Commons" -- free resources tend to get over exploited by humans to outcompete each other
+		\begin{itemize}
+			\item E.g.s
+				\begin{itemize}
+					\item Pllution of air and water
+					\item depletion of auqifers
+				\end{itemize}
+		\end{itemize}
+	\item HIPPO -- categories of species decline ( in order of effect)
+		\begin{itemize}
+			\item Habitat loss
+				\begin{itemize}
+					\item Almost everywhere
+					\item bigest driver of drop in biodiversity
+					\item deforestization, ag, suburban
+				\end{itemize}
+			\item Invasive species
+				\begin{itemize}
+					\item Compete with native species
+					\item invasive species tend to escape predators, so they outcompete native
+				\end{itemize}
+			\item Pollution
+				\begin{itemize}
+					\item  many forms
+					\item garbage in the ociean
+				\end{itemize}
+			\item Population -- human (over population)
+				\begin{itemize}
+					\item Growing rapidly
+					\item acceleration with little sign of slowing down...
+					\item 60 years ago we were at 3 billion people...
+					\item we have surpassed the sustainable number...
+					\item birth rates are coming down, but not fast enough...
+				\end{itemize}
+			\item Over harvesting
+				\begin{itemize}
+					\item Cut too many trees, kil to many terestrial animals, ooverfish
+				\end{itemize}
+		\end{itemize}
+	\item we are at 1k to 10k species lost per year
+	\item Solution -- spcecies area curve
+		\begin{itemize}
+			\item function of the number of species and land available
+			\item Setting asside Half of all land and water area will save 85\% of species
+			\item needs to be addressed at a governmental and individual level
+				\begin{itemize}
+					\item individuals can set aside some of their land to run wild
+				\end{itemize}
+		\end{itemize}
+\end{itemize}
+
+							
+\end{document}
